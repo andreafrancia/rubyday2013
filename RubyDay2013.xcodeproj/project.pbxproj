@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE482E0A175A247F00ABC235 /* RDMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE482E09175A247F00ABC235 /* RDMainTabBarViewController.m */; };
 		CE65536B1759EDCF00F0EE63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE65536A1759EDCF00F0EE63 /* UIKit.framework */; };
 		CE65536D1759EDCF00F0EE63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE65536C1759EDCF00F0EE63 /* Foundation.framework */; };
 		CE65536F1759EDCF00F0EE63 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE65536E1759EDCF00F0EE63 /* CoreGraphics.framework */; };
@@ -16,9 +17,17 @@
 		CE65537D1759EDCF00F0EE63 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE65537C1759EDCF00F0EE63 /* Default.png */; };
 		CE65537F1759EDCF00F0EE63 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE65537E1759EDCF00F0EE63 /* Default@2x.png */; };
 		CE6553811759EDCF00F0EE63 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE6553801759EDCF00F0EE63 /* Default-568h@2x.png */; };
+		CE9E3EF0175A26FF003FE09C /* RDScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E3EEF175A26FF003FE09C /* RDScheduleViewController.m */; };
+		CE9E3EF3175A2715003FE09C /* RDFavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E3EF2175A2715003FE09C /* RDFavouritesViewController.m */; };
+		CE9E3EF6175A272E003FE09C /* RDSpeakersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E3EF5175A272E003FE09C /* RDSpeakersViewController.m */; };
+		CE9E3EF9175A273D003FE09C /* RDInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E3EF8175A273D003FE09C /* RDInfoViewController.m */; };
+		CE9E3EFB175A28ED003FE09C /* RDScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3EFA175A28ED003FE09C /* RDScheduleViewController.xib */; };
+		CE9E3EFE175A2D98003FE09C /* RDDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E3EFD175A2D97003FE09C /* RDDatasource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE482E08175A247F00ABC235 /* RDMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMainTabBarViewController.h; sourceTree = "<group>"; };
+		CE482E09175A247F00ABC235 /* RDMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMainTabBarViewController.m; sourceTree = "<group>"; };
 		CE6553671759EDCF00F0EE63 /* RubyDay2013.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubyDay2013.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE65536A1759EDCF00F0EE63 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE65536C1759EDCF00F0EE63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,6 +41,17 @@
 		CE65537C1759EDCF00F0EE63 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CE65537E1759EDCF00F0EE63 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CE6553801759EDCF00F0EE63 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE9E3EEE175A26FF003FE09C /* RDScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDScheduleViewController.h; sourceTree = "<group>"; };
+		CE9E3EEF175A26FF003FE09C /* RDScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDScheduleViewController.m; sourceTree = "<group>"; };
+		CE9E3EF1175A2715003FE09C /* RDFavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDFavouritesViewController.h; sourceTree = "<group>"; };
+		CE9E3EF2175A2715003FE09C /* RDFavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDFavouritesViewController.m; sourceTree = "<group>"; };
+		CE9E3EF4175A272E003FE09C /* RDSpeakersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDSpeakersViewController.h; sourceTree = "<group>"; };
+		CE9E3EF5175A272E003FE09C /* RDSpeakersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDSpeakersViewController.m; sourceTree = "<group>"; };
+		CE9E3EF7175A273D003FE09C /* RDInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDInfoViewController.h; sourceTree = "<group>"; };
+		CE9E3EF8175A273D003FE09C /* RDInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDInfoViewController.m; sourceTree = "<group>"; };
+		CE9E3EFA175A28ED003FE09C /* RDScheduleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDScheduleViewController.xib; sourceTree = "<group>"; };
+		CE9E3EFC175A2D97003FE09C /* RDDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDDatasource.h; sourceTree = "<group>"; };
+		CE9E3EFD175A2D97003FE09C /* RDDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDDatasource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +101,19 @@
 				CE6553791759EDCF00F0EE63 /* RDAppDelegate.h */,
 				CE65537A1759EDCF00F0EE63 /* RDAppDelegate.m */,
 				CE6553711759EDCF00F0EE63 /* Supporting Files */,
+				CE482E08175A247F00ABC235 /* RDMainTabBarViewController.h */,
+				CE482E09175A247F00ABC235 /* RDMainTabBarViewController.m */,
+				CE9E3EEE175A26FF003FE09C /* RDScheduleViewController.h */,
+				CE9E3EEF175A26FF003FE09C /* RDScheduleViewController.m */,
+				CE9E3EF1175A2715003FE09C /* RDFavouritesViewController.h */,
+				CE9E3EF2175A2715003FE09C /* RDFavouritesViewController.m */,
+				CE9E3EF4175A272E003FE09C /* RDSpeakersViewController.h */,
+				CE9E3EF5175A272E003FE09C /* RDSpeakersViewController.m */,
+				CE9E3EF7175A273D003FE09C /* RDInfoViewController.h */,
+				CE9E3EF8175A273D003FE09C /* RDInfoViewController.m */,
+				CE9E3EFA175A28ED003FE09C /* RDScheduleViewController.xib */,
+				CE9E3EFC175A2D97003FE09C /* RDDatasource.h */,
+				CE9E3EFD175A2D97003FE09C /* RDDatasource.m */,
 			);
 			path = RubyDay2013;
 			sourceTree = "<group>";
@@ -155,6 +188,7 @@
 				CE65537D1759EDCF00F0EE63 /* Default.png in Resources */,
 				CE65537F1759EDCF00F0EE63 /* Default@2x.png in Resources */,
 				CE6553811759EDCF00F0EE63 /* Default-568h@2x.png in Resources */,
+				CE9E3EFB175A28ED003FE09C /* RDScheduleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +201,12 @@
 			files = (
 				CE6553771759EDCF00F0EE63 /* main.m in Sources */,
 				CE65537B1759EDCF00F0EE63 /* RDAppDelegate.m in Sources */,
+				CE482E0A175A247F00ABC235 /* RDMainTabBarViewController.m in Sources */,
+				CE9E3EF0175A26FF003FE09C /* RDScheduleViewController.m in Sources */,
+				CE9E3EF3175A2715003FE09C /* RDFavouritesViewController.m in Sources */,
+				CE9E3EF6175A272E003FE09C /* RDSpeakersViewController.m in Sources */,
+				CE9E3EF9175A273D003FE09C /* RDInfoViewController.m in Sources */,
+				CE9E3EFE175A2D98003FE09C /* RDDatasource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
