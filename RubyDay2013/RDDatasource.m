@@ -46,9 +46,20 @@ static RDDatasource *dataSource = nil;
     return self;
 }
 
+NSInteger sortSpeakers(id _speaker1, id _speaker2, void *context)
+{
+    NSDictionary *speaker1 = (NSDictionary *)_speaker1;
+    NSDictionary *speaker2 = (NSDictionary *)_speaker2;
+
+    NSString *name1 = speaker1[@"name"];
+    NSString *name2 = speaker2[@"name"];
+
+    return [name1 compare:name2];
+}
+
 - (NSArray *)speakers
 {
-    return speakers;
+    return [speakers sortedArrayUsingFunction:sortSpeakers context:nil];
 }
 
 - (NSArray *)tracks

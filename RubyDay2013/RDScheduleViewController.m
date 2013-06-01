@@ -8,6 +8,7 @@
 
 #import "RDScheduleViewController.h"
 #import "RDDatasource.h"
+#import "RDTalkViewController.h"
 
 @interface RDScheduleViewController ()
 
@@ -67,6 +68,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSArray *schedule = tracks[currentTrack][@"schedule"];
+    NSDictionary *talkInfo = schedule[indexPath.row];
+
+    RDTalkViewController *talkViewController = [[RDTalkViewController alloc] initWithTalkDictionary:talkInfo];
+
+    [self.navigationController pushViewController:talkViewController animated:YES];
 }
 
 #pragma mark UITableViewDatasource -

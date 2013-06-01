@@ -23,6 +23,10 @@
 		CE9E3EF9175A273D003FE09C /* RDInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E3EF8175A273D003FE09C /* RDInfoViewController.m */; };
 		CE9E3EFB175A28ED003FE09C /* RDScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3EFA175A28ED003FE09C /* RDScheduleViewController.xib */; };
 		CE9E3EFE175A2D98003FE09C /* RDDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E3EFD175A2D97003FE09C /* RDDatasource.m */; };
+		CE9E3F02175A3C2E003FE09C /* RDTalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E3F00175A3C2E003FE09C /* RDTalkViewController.m */; };
+		CE9E3F03175A3C2E003FE09C /* RDTalkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F01175A3C2E003FE09C /* RDTalkViewController.xib */; };
+		CE9E3F07175A41D5003FE09C /* RDSpeakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E3F05175A41D5003FE09C /* RDSpeakerViewController.m */; };
+		CE9E3F08175A41D5003FE09C /* RDSpeakerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F06175A41D5003FE09C /* RDSpeakerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,12 @@
 		CE9E3EFA175A28ED003FE09C /* RDScheduleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDScheduleViewController.xib; sourceTree = "<group>"; };
 		CE9E3EFC175A2D97003FE09C /* RDDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDDatasource.h; sourceTree = "<group>"; };
 		CE9E3EFD175A2D97003FE09C /* RDDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDDatasource.m; sourceTree = "<group>"; };
+		CE9E3EFF175A3C2E003FE09C /* RDTalkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDTalkViewController.h; sourceTree = "<group>"; };
+		CE9E3F00175A3C2E003FE09C /* RDTalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDTalkViewController.m; sourceTree = "<group>"; };
+		CE9E3F01175A3C2E003FE09C /* RDTalkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDTalkViewController.xib; sourceTree = "<group>"; };
+		CE9E3F04175A41D5003FE09C /* RDSpeakerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDSpeakerViewController.h; sourceTree = "<group>"; };
+		CE9E3F05175A41D5003FE09C /* RDSpeakerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDSpeakerViewController.m; sourceTree = "<group>"; };
+		CE9E3F06175A41D5003FE09C /* RDSpeakerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDSpeakerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +124,12 @@
 				CE9E3EFA175A28ED003FE09C /* RDScheduleViewController.xib */,
 				CE9E3EFC175A2D97003FE09C /* RDDatasource.h */,
 				CE9E3EFD175A2D97003FE09C /* RDDatasource.m */,
+				CE9E3EFF175A3C2E003FE09C /* RDTalkViewController.h */,
+				CE9E3F00175A3C2E003FE09C /* RDTalkViewController.m */,
+				CE9E3F01175A3C2E003FE09C /* RDTalkViewController.xib */,
+				CE9E3F04175A41D5003FE09C /* RDSpeakerViewController.h */,
+				CE9E3F05175A41D5003FE09C /* RDSpeakerViewController.m */,
+				CE9E3F06175A41D5003FE09C /* RDSpeakerViewController.xib */,
 			);
 			path = RubyDay2013;
 			sourceTree = "<group>";
@@ -189,6 +205,8 @@
 				CE65537F1759EDCF00F0EE63 /* Default@2x.png in Resources */,
 				CE6553811759EDCF00F0EE63 /* Default-568h@2x.png in Resources */,
 				CE9E3EFB175A28ED003FE09C /* RDScheduleViewController.xib in Resources */,
+				CE9E3F03175A3C2E003FE09C /* RDTalkViewController.xib in Resources */,
+				CE9E3F08175A41D5003FE09C /* RDSpeakerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +225,8 @@
 				CE9E3EF6175A272E003FE09C /* RDSpeakersViewController.m in Sources */,
 				CE9E3EF9175A273D003FE09C /* RDInfoViewController.m in Sources */,
 				CE9E3EFE175A2D98003FE09C /* RDDatasource.m in Sources */,
+				CE9E3F02175A3C2E003FE09C /* RDTalkViewController.m in Sources */,
+				CE9E3F07175A41D5003FE09C /* RDSpeakerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

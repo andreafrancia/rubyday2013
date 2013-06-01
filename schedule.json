@@ -175,5 +175,87 @@
         }
       ]
     }
+  ],
+  "speakers": [
+    {
+      "handle": "jodosha",
+      "name": "Luca Guidi",
+      "bio": "Passionate web developer, he spent most of his career working with Rails, since its early days. In his free time, he loves to travel, spend time with his family, contribute to open source, blog about technology, and mix beats. He is an avid photographer and tea lover."
+    },
+    {
+      "handle": "stefontanelli",
+      "name": "Stefano Fontanelli",
+      "bio": "I am a software engineer from Florence (Italy) with 8+ years of experience in software development. I studied at Scuola Superiore Sant'Anna (Pisa) as PhD student and I founded a startup called Asidev. Currently I'm backend developer at Gild, a Californian startup that brings Science into hiring. I love writing large scale applications that must be highly scalable, reliable and efficient. "
+    },
+    {
+      "handle": "steffoz",
+      "name": "Stefano Verna",
+      "bio": "Entusiasta di nuove tecnologie, TDD e metodi agili di sviluppo. Attivo contributore open-source, appassionato sviluppatore Ruby. Conosciuto dai più per l'estensione per Firefox DownThemAll!  Nel 2010 sono tra i fondatori di weLaika, società di consulenza torinese specializzata in sviluppo di applicazioni/gestionali in Ruby on Rails e sviluppo mobile iOS ed Android."
+    },
+    {
+      "handle": "arkh4m",
+      "name": "Ju Liu",
+      "bio": "Ingegnere informatico, appassionato di tecnologia e conoscenza. Si è dedicato allo sviluppo di applicazioni web, con un focus particolare a metodologie di lavoro agili e al Test Driven Development. Innamorato di Ruby on Rails, del codice elegante e di Vim."
+    },
+    {
+      "handle": "elia",
+      "name": "Elia Schito",
+      "bio": "A Ruby/Rails developer @mikamai, catholic, who loves his beautiful wife and his wonderful children. Opal core team member."
+    },
+    {
+      "handle": "alleadel",
+      "name": "Alessio Della Motta",
+      "bio": "Alessio Della Motta is a software architect and engineer interested in almost every field of computing. His technical background covers a wide range of technologies and languages and his focus is on enterprise and distributed systems. Alessio completed his master’s degree at the University of California, Irvine in 2010. Then he started working as an IT consultant specializing in EAI and SOA. Now he manages and designs software solutions at Mavigex, a small company in Bologna. In his spare time, Alessio likes to play guitar, football and to read big divulgative tomes on math and physics. "
+    },
+    {
+      "handle": "unbit",
+      "name": "Roberto De Ioris",
+      "bio": "Co-fondatore di Unbit e 20Tab, amministratore di sistemi UNIX da 11 anni (di fila..), lead-developer dei progetti uWSGI, BlastBeat, Koi-ha e altri di cui non ricordo neanche il nome. Prediligo la programmazione low-level ma non disdegno linguaggi come perl, python e ovviamente ruby."
+    },
+    {
+      "handle": "flaurita",
+      "name": "Francesco Flaurita",
+      "bio": "Francesco joined Gild in 2012 as a Lead Software Engineer, having fun writing complex algorithms on Gild’s data analysis backend. Prior to Gild, Francesco worked for more than ten years at FASTWEB, one of the biggest ISP companies in Italy, where he led business critical software. Francesco was also one of the top users on Coderloop, leading him to become one of the authors of challenges on Gild’s code evaluation system."
+    },
+    {
+      "handle": "razielgn",
+      "name": "Federico Ravasio",
+      "bio": "That programming geek you'll find arguing about syntax on a late friday night, probably in front of quality Belgian beer. When university was no longer fun, he started freelancing at Webrain and has been doing so ever since."
+    },
+    {
+      "handle": "emadb",
+      "name": "Emanuele DelBono",
+      "bio": "I'm a software engineer that is trying to become a polyglot programmer learning new languages and tools to develop better applications. I work as a lead developer and architect in CodicePlastico a small software house based in Italy, I'm responsible for the development of web applications primarily with ASP.NET MVC and Ruby on Rails and Javascript."
+    },
+    {
+      "handle": "makevoid",
+      "name": "Francesco Canessa",
+      "bio": "The average developer, ruby and javascript are my day-to-day languages, developeing multiple small open source projects and libraries based on tools I need."
+    },
+    {
+      "handle": "ilpuccio",
+      "name": "Raoul JP Bonnal",
+      "bio": "Laureato nel 2003 in Informatica all'Università di Milano Bicocca, ha intrapreso la carriera di bioinformatico presso il CNR-ITB e un'esperienza in America e' ora responsabile della bioinformatica, sviluppo e analisi dati, presso l'Istituto Nazionale di Genetica Molecolare di Milano. Insieme a Francesco Strozzi contribuisce al progetto BioRuby, parte della Open BioInformatics Foundation -OBF-, e sono mentori Google Summer of Code per le organizzazione OBF e SciRuby."
+    },
+    {
+      "handle": "fstrozzi",
+      "name": "Francesco Strozzi",
+      "bio": "Laureato nel 2005 in Bioinformatica all'Università di Milano Bicocca, è responsabile dal 2011 della Core Facility di Bioinformatica del Parco Tecnologico di Lodi, per lo sviluppo software e l'analisi di dati genomici. Insieme a Raoul JP Bonnal contribuisce al progetto BioRuby, parte della Open BioInformatics Foundation -OBF-, e sono mentori Google Summer of Code per le organizzazione OBF e SciRuby."
+    },
+    {
+      "handle": "mulpat",
+      "name": "Patrick Mulder",
+      "bio": "I started to get paid for developing user interfaces for Matlab end of the 90ies, progressed towards scripting Unix with Perl, Python and Java (Swing), and finally got infected by the Ruby-on-Rails around 2008. I have been developing web applications with Ruby since then, and rarely looked back. I like blogging at http://thinkingonthinking.com and was recently invited to a panel discussion at Wroclove.rb 2013 on single page applications with different representatives of frontend frameworks (AngularJS, EmberJS and Backbone.js)."
+    },
+    {
+      "handle": "damicosimone",
+      "name": "Simone D'Amico",
+      "bio": "I'm COO of Metwit, a platform that collects and analyse crowdsourced environmental data (especially weather). I'm passionate about a lot stuff: XP and Agile (I'm coaching SCRUM), Devops (chef worshipper), Apple frameworks (Cocoa lover) and obviously Ruby (I used it before it was cool ;))"
+    },
+    {
+      "handle": "cloud8421",
+      "name": "Claudio Ortolina",
+      "bio": "Hello! My name is Claudio, I'm an italian developer currently living in London and I work for New Bamboo (http://new-bamboo.co.uk). I've been a Rails developer for a couple of years, with experience into the full stack (servers and puppet, plain old ruby/rails and coffeescript/javascript with tools like Backbone.js and Require.js.)"
+    },
   ]
 }
