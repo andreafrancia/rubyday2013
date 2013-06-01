@@ -281,6 +281,7 @@
 				CE6553861759EDCF00F0EE63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
