@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF8ACBCA04C04B3987E5D168 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 898D01480B714CBAB008474D /* libPods.a */; };
 		CE482E0A175A247F00ABC235 /* RDMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE482E09175A247F00ABC235 /* RDMainTabBarViewController.m */; };
 		CE65536B1759EDCF00F0EE63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE65536A1759EDCF00F0EE63 /* UIKit.framework */; };
 		CE65536D1759EDCF00F0EE63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE65536C1759EDCF00F0EE63 /* Foundation.framework */; };
@@ -27,9 +28,38 @@
 		CE9E3F03175A3C2E003FE09C /* RDTalkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F01175A3C2E003FE09C /* RDTalkViewController.xib */; };
 		CE9E3F07175A41D5003FE09C /* RDSpeakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E3F05175A41D5003FE09C /* RDSpeakerViewController.m */; };
 		CE9E3F08175A41D5003FE09C /* RDSpeakerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F06175A41D5003FE09C /* RDSpeakerViewController.xib */; };
+		CE9E3F0D175B7AF2003FE09C /* topbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F0B175B7AF2003FE09C /* topbar@2x.png */; };
+		CE9E3F0E175B7AF2003FE09C /* topbar.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F0C175B7AF2003FE09C /* topbar.png */; };
+		CE9E3F11175B7F3E003FE09C /* EurostileRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F0F175B7F3E003FE09C /* EurostileRegular.ttf */; };
+		CE9E3F12175B7F3E003FE09C /* EurostileBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F10175B7F3E003FE09C /* EurostileBold.ttf */; };
+		CE9E3F15175B8490003FE09C /* pw_pattern@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F13175B8490003FE09C /* pw_pattern@2X.png */; };
+		CE9E3F16175B8490003FE09C /* pw_pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F14175B8490003FE09C /* pw_pattern.png */; };
+		CE9E3F1D175B88CC003FE09C /* tablerowsep.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F17175B88CB003FE09C /* tablerowsep.png */; };
+		CE9E3F1E175B88CC003FE09C /* tablerowsep@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F18175B88CB003FE09C /* tablerowsep@2x.png */; };
+		CE9E3F1F175B88CC003FE09C /* tablerow.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F19175B88CB003FE09C /* tablerow.png */; };
+		CE9E3F20175B88CC003FE09C /* tablerow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F1A175B88CB003FE09C /* tablerow@2x.png */; };
+		CE9E3F21175B88CC003FE09C /* tableheader.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F1B175B88CB003FE09C /* tableheader.png */; };
+		CE9E3F22175B88CC003FE09C /* tableheader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F1C175B88CB003FE09C /* tableheader@2x.png */; };
+		CE9E3F25175B896E003FE09C /* tablefooter.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F23175B896E003FE09C /* tablefooter.png */; };
+		CE9E3F26175B896E003FE09C /* tablefooter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F24175B896E003FE09C /* tablefooter@2x.png */; };
+		CE9E3F29175B9241003FE09C /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F27175B9241003FE09C /* tabbar.png */; };
+		CE9E3F2A175B9241003FE09C /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F28175B9241003FE09C /* tabbar@2x.png */; };
+		CE9E3F2D175B953B003FE09C /* icon_agenda.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F2B175B953B003FE09C /* icon_agenda.png */; };
+		CE9E3F2E175B953B003FE09C /* icon_agenda@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F2C175B953B003FE09C /* icon_agenda@2x.png */; };
+		CE9E3F31175BA647003FE09C /* RDTalkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E3F30175BA647003FE09C /* RDTalkCell.m */; };
+		CE9E3F33175BA67E003FE09C /* RDTalkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F32175BA67E003FE09C /* RDTalkCell.xib */; };
+		CE9E3F3A175C912F003FE09C /* icon_about.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F34175C912D003FE09C /* icon_about.png */; };
+		CE9E3F3B175C912F003FE09C /* icon_about@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F35175C912D003FE09C /* icon_about@2x.png */; };
+		CE9E3F3C175C912F003FE09C /* icon_speakers.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F36175C912E003FE09C /* icon_speakers.png */; };
+		CE9E3F3D175C912F003FE09C /* icon_speakers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F37175C912E003FE09C /* icon_speakers@2x.png */; };
+		CE9E3F3E175C912F003FE09C /* icon_favourites.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F38175C912E003FE09C /* icon_favourites.png */; };
+		CE9E3F3F175C912F003FE09C /* icon_favourites@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F39175C912F003FE09C /* icon_favourites@2x.png */; };
+		CE9E3F42175C9302003FE09C /* row_accessory.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F40175C9302003FE09C /* row_accessory.png */; };
+		CE9E3F43175C9302003FE09C /* row_accessory@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F41175C9302003FE09C /* row_accessory@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		898D01480B714CBAB008474D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE482E08175A247F00ABC235 /* RDMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMainTabBarViewController.h; sourceTree = "<group>"; };
 		CE482E09175A247F00ABC235 /* RDMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMainTabBarViewController.m; sourceTree = "<group>"; };
 		CE6553671759EDCF00F0EE63 /* RubyDay2013.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubyDay2013.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +92,36 @@
 		CE9E3F04175A41D5003FE09C /* RDSpeakerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDSpeakerViewController.h; sourceTree = "<group>"; };
 		CE9E3F05175A41D5003FE09C /* RDSpeakerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDSpeakerViewController.m; sourceTree = "<group>"; };
 		CE9E3F06175A41D5003FE09C /* RDSpeakerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDSpeakerViewController.xib; sourceTree = "<group>"; };
+		CE9E3F0B175B7AF2003FE09C /* topbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topbar@2x.png"; sourceTree = "<group>"; };
+		CE9E3F0C175B7AF2003FE09C /* topbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbar.png; sourceTree = "<group>"; };
+		CE9E3F0F175B7F3E003FE09C /* EurostileRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EurostileRegular.ttf; sourceTree = "<group>"; };
+		CE9E3F10175B7F3E003FE09C /* EurostileBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EurostileBold.ttf; sourceTree = "<group>"; };
+		CE9E3F13175B8490003FE09C /* pw_pattern@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pw_pattern@2X.png"; sourceTree = "<group>"; };
+		CE9E3F14175B8490003FE09C /* pw_pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pw_pattern.png; sourceTree = "<group>"; };
+		CE9E3F17175B88CB003FE09C /* tablerowsep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tablerowsep.png; sourceTree = "<group>"; };
+		CE9E3F18175B88CB003FE09C /* tablerowsep@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tablerowsep@2x.png"; sourceTree = "<group>"; };
+		CE9E3F19175B88CB003FE09C /* tablerow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tablerow.png; sourceTree = "<group>"; };
+		CE9E3F1A175B88CB003FE09C /* tablerow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tablerow@2x.png"; sourceTree = "<group>"; };
+		CE9E3F1B175B88CB003FE09C /* tableheader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableheader.png; sourceTree = "<group>"; };
+		CE9E3F1C175B88CB003FE09C /* tableheader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableheader@2x.png"; sourceTree = "<group>"; };
+		CE9E3F23175B896E003FE09C /* tablefooter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tablefooter.png; sourceTree = "<group>"; };
+		CE9E3F24175B896E003FE09C /* tablefooter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tablefooter@2x.png"; sourceTree = "<group>"; };
+		CE9E3F27175B9241003FE09C /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
+		CE9E3F28175B9241003FE09C /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
+		CE9E3F2B175B953B003FE09C /* icon_agenda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_agenda.png; sourceTree = "<group>"; };
+		CE9E3F2C175B953B003FE09C /* icon_agenda@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_agenda@2x.png"; sourceTree = "<group>"; };
+		CE9E3F2F175BA647003FE09C /* RDTalkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDTalkCell.h; sourceTree = "<group>"; };
+		CE9E3F30175BA647003FE09C /* RDTalkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDTalkCell.m; sourceTree = "<group>"; };
+		CE9E3F32175BA67E003FE09C /* RDTalkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDTalkCell.xib; sourceTree = "<group>"; };
+		CE9E3F34175C912D003FE09C /* icon_about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_about.png; sourceTree = "<group>"; };
+		CE9E3F35175C912D003FE09C /* icon_about@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_about@2x.png"; sourceTree = "<group>"; };
+		CE9E3F36175C912E003FE09C /* icon_speakers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_speakers.png; sourceTree = "<group>"; };
+		CE9E3F37175C912E003FE09C /* icon_speakers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_speakers@2x.png"; sourceTree = "<group>"; };
+		CE9E3F38175C912E003FE09C /* icon_favourites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_favourites.png; sourceTree = "<group>"; };
+		CE9E3F39175C912F003FE09C /* icon_favourites@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_favourites@2x.png"; sourceTree = "<group>"; };
+		CE9E3F40175C9302003FE09C /* row_accessory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = row_accessory.png; sourceTree = "<group>"; };
+		CE9E3F41175C9302003FE09C /* row_accessory@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "row_accessory@2x.png"; sourceTree = "<group>"; };
+		D24A81558A374930B2E82198 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +132,7 @@
 				CE65536B1759EDCF00F0EE63 /* UIKit.framework in Frameworks */,
 				CE65536D1759EDCF00F0EE63 /* Foundation.framework in Frameworks */,
 				CE65536F1759EDCF00F0EE63 /* CoreGraphics.framework in Frameworks */,
+				BF8ACBCA04C04B3987E5D168 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +145,7 @@
 				CE6553701759EDCF00F0EE63 /* RubyDay2013 */,
 				CE6553691759EDCF00F0EE63 /* Frameworks */,
 				CE6553681759EDCF00F0EE63 /* Products */,
+				D24A81558A374930B2E82198 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +163,7 @@
 				CE65536A1759EDCF00F0EE63 /* UIKit.framework */,
 				CE65536C1759EDCF00F0EE63 /* Foundation.framework */,
 				CE65536E1759EDCF00F0EE63 /* CoreGraphics.framework */,
+				898D01480B714CBAB008474D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,6 +193,9 @@
 				CE9E3F04175A41D5003FE09C /* RDSpeakerViewController.h */,
 				CE9E3F05175A41D5003FE09C /* RDSpeakerViewController.m */,
 				CE9E3F06175A41D5003FE09C /* RDSpeakerViewController.xib */,
+				CE9E3F2F175BA647003FE09C /* RDTalkCell.h */,
+				CE9E3F30175BA647003FE09C /* RDTalkCell.m */,
+				CE9E3F32175BA67E003FE09C /* RDTalkCell.xib */,
 			);
 			path = RubyDay2013;
 			sourceTree = "<group>";
@@ -137,6 +203,32 @@
 		CE6553711759EDCF00F0EE63 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE9E3F2B175B953B003FE09C /* icon_agenda.png */,
+				CE9E3F2C175B953B003FE09C /* icon_agenda@2x.png */,
+				CE9E3F27175B9241003FE09C /* tabbar.png */,
+				CE9E3F28175B9241003FE09C /* tabbar@2x.png */,
+				CE9E3F23175B896E003FE09C /* tablefooter.png */,
+				CE9E3F24175B896E003FE09C /* tablefooter@2x.png */,
+				CE9E3F17175B88CB003FE09C /* tablerowsep.png */,
+				CE9E3F18175B88CB003FE09C /* tablerowsep@2x.png */,
+				CE9E3F19175B88CB003FE09C /* tablerow.png */,
+				CE9E3F1A175B88CB003FE09C /* tablerow@2x.png */,
+				CE9E3F1B175B88CB003FE09C /* tableheader.png */,
+				CE9E3F1C175B88CB003FE09C /* tableheader@2x.png */,
+				CE9E3F13175B8490003FE09C /* pw_pattern@2X.png */,
+				CE9E3F14175B8490003FE09C /* pw_pattern.png */,
+				CE9E3F0F175B7F3E003FE09C /* EurostileRegular.ttf */,
+				CE9E3F10175B7F3E003FE09C /* EurostileBold.ttf */,
+				CE9E3F0B175B7AF2003FE09C /* topbar@2x.png */,
+				CE9E3F0C175B7AF2003FE09C /* topbar.png */,
+				CE9E3F34175C912D003FE09C /* icon_about.png */,
+				CE9E3F35175C912D003FE09C /* icon_about@2x.png */,
+				CE9E3F36175C912E003FE09C /* icon_speakers.png */,
+				CE9E3F37175C912E003FE09C /* icon_speakers@2x.png */,
+				CE9E3F38175C912E003FE09C /* icon_favourites.png */,
+				CE9E3F39175C912F003FE09C /* icon_favourites@2x.png */,
+				CE9E3F40175C9302003FE09C /* row_accessory.png */,
+				CE9E3F41175C9302003FE09C /* row_accessory@2x.png */,
 				CE6553721759EDCF00F0EE63 /* RubyDay2013-Info.plist */,
 				CE6553731759EDCF00F0EE63 /* InfoPlist.strings */,
 				CE6553761759EDCF00F0EE63 /* main.m */,
@@ -155,9 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE6553841759EDCF00F0EE63 /* Build configuration list for PBXNativeTarget "RubyDay2013" */;
 			buildPhases = (
+				1476F74362FB46B7A0B3520A /* Check Pods Manifest.lock */,
 				CE6553631759EDCF00F0EE63 /* Sources */,
 				CE6553641759EDCF00F0EE63 /* Frameworks */,
 				CE6553651759EDCF00F0EE63 /* Resources */,
+				E80B71DE6EB64FFBABB84C2D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,10 +301,68 @@
 				CE9E3EFB175A28ED003FE09C /* RDScheduleViewController.xib in Resources */,
 				CE9E3F03175A3C2E003FE09C /* RDTalkViewController.xib in Resources */,
 				CE9E3F08175A41D5003FE09C /* RDSpeakerViewController.xib in Resources */,
+				CE9E3F0D175B7AF2003FE09C /* topbar@2x.png in Resources */,
+				CE9E3F0E175B7AF2003FE09C /* topbar.png in Resources */,
+				CE9E3F11175B7F3E003FE09C /* EurostileRegular.ttf in Resources */,
+				CE9E3F12175B7F3E003FE09C /* EurostileBold.ttf in Resources */,
+				CE9E3F15175B8490003FE09C /* pw_pattern@2X.png in Resources */,
+				CE9E3F16175B8490003FE09C /* pw_pattern.png in Resources */,
+				CE9E3F1D175B88CC003FE09C /* tablerowsep.png in Resources */,
+				CE9E3F1E175B88CC003FE09C /* tablerowsep@2x.png in Resources */,
+				CE9E3F1F175B88CC003FE09C /* tablerow.png in Resources */,
+				CE9E3F20175B88CC003FE09C /* tablerow@2x.png in Resources */,
+				CE9E3F21175B88CC003FE09C /* tableheader.png in Resources */,
+				CE9E3F22175B88CC003FE09C /* tableheader@2x.png in Resources */,
+				CE9E3F25175B896E003FE09C /* tablefooter.png in Resources */,
+				CE9E3F26175B896E003FE09C /* tablefooter@2x.png in Resources */,
+				CE9E3F29175B9241003FE09C /* tabbar.png in Resources */,
+				CE9E3F2A175B9241003FE09C /* tabbar@2x.png in Resources */,
+				CE9E3F2D175B953B003FE09C /* icon_agenda.png in Resources */,
+				CE9E3F2E175B953B003FE09C /* icon_agenda@2x.png in Resources */,
+				CE9E3F33175BA67E003FE09C /* RDTalkCell.xib in Resources */,
+				CE9E3F3A175C912F003FE09C /* icon_about.png in Resources */,
+				CE9E3F3B175C912F003FE09C /* icon_about@2x.png in Resources */,
+				CE9E3F3C175C912F003FE09C /* icon_speakers.png in Resources */,
+				CE9E3F3D175C912F003FE09C /* icon_speakers@2x.png in Resources */,
+				CE9E3F3E175C912F003FE09C /* icon_favourites.png in Resources */,
+				CE9E3F3F175C912F003FE09C /* icon_favourites@2x.png in Resources */,
+				CE9E3F42175C9302003FE09C /* row_accessory.png in Resources */,
+				CE9E3F43175C9302003FE09C /* row_accessory@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1476F74362FB46B7A0B3520A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		E80B71DE6EB64FFBABB84C2D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE6553631759EDCF00F0EE63 /* Sources */ = {
@@ -227,6 +379,7 @@
 				CE9E3EFE175A2D98003FE09C /* RDDatasource.m in Sources */,
 				CE9E3F02175A3C2E003FE09C /* RDTalkViewController.m in Sources */,
 				CE9E3F07175A41D5003FE09C /* RDSpeakerViewController.m in Sources */,
+				CE9E3F31175BA647003FE09C /* RDTalkCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +455,7 @@
 		};
 		CE6553851759EDCF00F0EE63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24A81558A374930B2E82198 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RubyDay2013/RubyDay2013-Prefix.pch";
@@ -313,6 +467,7 @@
 		};
 		CE6553861759EDCF00F0EE63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24A81558A374930B2E82198 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RubyDay2013/RubyDay2013-Prefix.pch";

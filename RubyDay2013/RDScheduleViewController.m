@@ -9,6 +9,8 @@
 #import "RDScheduleViewController.h"
 #import "RDDatasource.h"
 #import "RDTalkViewController.h"
+#import "SVSegmentedControl.h"
+#import "RDTalkCell.h"
 
 @interface RDScheduleViewController ()
 
@@ -18,6 +20,7 @@
     RDDatasource *dataSource;
     int currentTrack;
     NSArray *tracks;
+    SVSegmentedControl *tracksControl;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -33,20 +36,49 @@
 {
     [super viewDidLoad];
 
-    self.title = @"Schedule";
+    self.title = @"Agenda";
 
     dataSource = [RDDatasource currentSource];
     tracks = dataSource.tracks;
 
-    [self.trackControl removeAllSegments];
-    int i = 0;
-    for (NSDictionary *track in tracks) {
-        [self.trackControl insertSegmentWithTitle:track[@"name"] atIndex:i animated:NO];
-        i++;
-    }
+    [self buildTracksControl];
+    [self styleTable];
 
     currentTrack = 0;
-    [self.trackControl setSelectedSegmentIndex:currentTrack];
+}
+
+- (void)tracksControlChanged:(SVSegmentedControl*)segmentedControl {
+    currentTrack = (int)segmentedControl.selectedSegmentIndex;
+
+    [self.table reloadData];
+}
+
+- (void)buildTracksControl
+{
+    NSMutableArray *tracksNames = [NSMutableArray arrayWithCapacity:tracks.count];
+    for (NSDictionary *track in tracks)
+        [tracksNames addObject:track[@"name"]];
+
+    tracksControl = [[SVSegmentedControl alloc] initWithSectionTitles:tracksNames];
+    [tracksControl addTarget:self action:@selector(tracksControlChanged:) forControlEvents:UIControlEventValueChanged];
+    tracksControl.frame = CGRectMake(0, 0, 320, 36);
+    
+    tracksControl.cornerRadius = 0;
+    tracksControl.font = [UIFont fontWithName:@"EurostileBold" size:15];
+    tracksControl.innerShadowColor = [UIColor colorWithRed:160/255.0 green:160/255.0 blue:160/255.0 alpha:1.0];
+
+    [self.view addSubview:tracksControl];
+}
+
+- (void)styleTable
+{
+    self.table.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"pw_pattern"]];
+    self.table.tableHeaderView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tableheader"]];
+    self.table.tableFooterView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tablefooter"]];
+    self.table.separatorStyle = UITableViewCellSeparatorStyleNone;
+
+    UINib *nib = [UINib nibWithNibName:@"RDTalkCell" bundle:[NSBundle mainBundle]];
+    [self.table registerNib:nib forCellReuseIdentifier:@"Cell"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,25 +87,27 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)trackChanged:(id)sender
-{
-    UISegmentedControl *control = (UISegmentedControl *)sender;
-
-    currentTrack = control.selectedSegmentIndex;
-
-    [self.table reloadData];
-}
-
 #pragma mark UITableViewDelegate -
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSArray *schedule = tracks[currentTrack][@"schedule"];
-    NSDictionary *talkInfo = schedule[indexPath.row];
+    NSDictionary *talkInfo = schedule[indexPath.row / 2];
 
+    if (talkInfo[@"speakers"] == nil)
+        return;
+    
     RDTalkViewController *talkViewController = [[RDTalkViewController alloc] initWithTalkDictionary:talkInfo];
 
     [self.navigationController pushViewController:talkViewController animated:YES];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row % 2 == 0)
+        return 45;
+    else
+        return 1;
 }
 
 #pragma mark UITableViewDatasource -
@@ -81,24 +115,41 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *kCellIdentifier = @"Cell";
+    static NSString *kSepIdentifier = @"CellSep";
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
+    if (indexPath.row % 2 == 0)
+    {
+        RDTalkCell *cell = (RDTalkCell *)[tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
 
-    if (cell == nil)
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:kCellIdentifier];
+        NSArray *schedule = tracks[currentTrack][@"schedule"];
+        NSDictionary *item = schedule[indexPath.row / 2];
 
-    NSArray *schedule = tracks[currentTrack][@"schedule"];
-    NSDictionary *item = schedule[indexPath.row];
+        [cell setData:item];
 
-    cell.textLabel.text = item[@"title"];
+        return cell;
+    }
+    else
+    {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kSepIdentifier];
 
-    return cell;
+        if (cell == nil)
+        {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kSepIdentifier];
+            cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tablerowsep"]];
+        }
+
+        return cell;
+    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     NSArray *schedule = tracks[currentTrack][@"schedule"];
-    return schedule.count;
+    return schedule.count * 2 - 1;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [cell setBackgroundColor:[UIColor clearColor]];
 }
 
 

@@ -10,9 +10,6 @@
 
 @interface RDScheduleViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (retain, nonatomic) IBOutlet UISegmentedControl *trackControl;
 @property (retain, nonatomic) IBOutlet UITableView *table;
-
--(IBAction)trackChanged:(id)sender;
 
 @end

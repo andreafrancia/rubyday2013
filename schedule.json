@@ -4,85 +4,85 @@
       "name": "Track 1",
       "schedule": [
         {
-          "from": "8:30am",
-          "to": "9:15am",
+          "from": "8:30",
+          "to": "9:15",
           "title": "Check In"
         },
         {
-          "from": "9:15am",
-          "to": "9:55am",
+          "from": "9:15",
+          "to": "9:55",
           "title": "Welcome & Keynote",
           "lang": "en"
         },
         {
-          "from": "9:55am",
-          "to": "10:35am",
+          "from": "9:55",
+          "to": "10:35",
           "title": "Coffee Break"
         },
         {
-          "from": "10:35am",
-          "to": "11:35am",
+          "from": "10:35",
+          "to": "11:35",
           "title": "A Rails Criticism",
           "speakers": ["jodosha"],
           "lang": "en",
           "abstract": "A deep insight on why Ruby on Rails has revolutionized web development. This talk will focus its attention on the Rails \"Golden Path\", the reasons to its success, the most common problems, and how its API can be improved. We will learn to benefit from a tool as powerful as it is dangerous, how to mitigate architectural, design and testability implications for your applications and how to improve the quality of your code."
         },
         {
-          "from": "11:35am",
-          "to": "12:35am",
+          "from": "11:35",
+          "to": "12:35",
           "title": "Redis & Ruby like a pro",
           "speakers": ["stefontanelli"],
           "lang": "it",
           "abstract": "Redis is an open source advanced key-value store. It can contain strings, hashes, lists, sets and sorted sets. Its greatest feature is that you can run atomic operations on these types, like appending to a string; incrementing the value in a hash; pushing to a list; computing set intersection, union and difference. This talk shows how use Redis and Ruby to build an high scalable, reliable and concurrent infrastructure of services using the Publish/Subscribe messaging paradigm and distributed locks among services. All the examples coming from a large scale application that handles hundred millions of messages every day."
         },
         {
-          "from": "12:35am",
-          "to": "1:35pm",
+          "from": "12:35",
+          "to": "13:35",
           "title": "Fat models must die",
           "speakers": ["arkh4m", "steffoz"],
           "lang": "it",
           "abstract": "Il concetto “Fat Models, Skinny controller” è da sempre uno dei cavalli di battaglia di Rails ed è uno dei principi fondamentali intorno a cui ruota il suo stack. Purtroppo, seguire ciecamente questo pattern spesso porta ad una crescita smisurata delle responsabilità dei modelli, che col passare del tempo e dei commit si trasformano in matasse di codice ingarbugliato e ingestibile. In questo talk verranno esplorate differenti metodologie che si possono seguire nella pratica per mantenere il controllo del proprio progetto. Si descriveranno i pattern più diffusi proposti dalla community Rails per risolvere il problema della crescita del codice nel medio-lungo periodo: incominciando con concerns e presenters per passare a service objects e DCI, verranno spiegati i pregi dell’utilizzare pratiche più OOP per gestire con soddisfazione la complessità delle nostre applicazioni."
         },
         {
-          "from": "1:35pm",
-          "to": "2:50pm",
+          "from": "13:35",
+          "to": "14:40",
           "title": "Lunch"
         },
         {
-          "from": "2:50pm",
-          "to": "3:35pm",
+          "from": "14:50",
+          "to": "15:35",
           "title": "Roll your own web crawler",
           "speakers": ["flaurita"],
           "abstract": "It is all about data. Having the right data at the right time might make the difference between you and your competitor. Google can show you just what it can catch. If you know where to find the data of your interest, let's go deeper and roll your own web crawler framework. Taking the advantage of the latest cool technologies I will show you how to build your distributed web crawler based on Redis and Mongo.",
           "lang": "en"
         },
         {
-          "from": "3:35pm",
-          "to": "4:20pm",
+          "from": "15:35",
+          "to": "16:20",
           "title": "Concurrency vs Parallelism",
           "speakers": ["razielgn"],
           "abstract": "What does it mean to structure a program in a concurrent manner? Concurrency is about structure, while parallelism is an interpreter feature: the problem has to be solved by the programmer first. What I'd like to show is how to think about problems, so to extract concurrent objects from the domain logic. I'll also take a brief view on different patterns to achieve concurrency and which gems to use that implement one.",
           "lang": "en"
         },
         {
-          "from": "4:20pm",
-          "to": "5:20pm",
+          "from": "16:20",
+          "to": "17:20",
           "title": "DDD in Ruby",
           "speakers": ["emadb"],
           "abstract": "When developers talk about Domain Driven Design they usually talk about Java or C# implementation and it seems that languages like Ruby or Python are not suited for these kind of architectures. During the talk I would like to show that every patterns described in the blue book can be written even in Ruby and sometimes the Ruby implementation is better than the Java one. Ruby is not a second a class language and its dynamic power could help a lot in writing complex business logic.",
           "lang": "en"
         },
         {
-          "from": "5:20pm",
-          "to": "6:05pm",
+          "from": "17:30",
+          "to": "18:05",
           "title": "Code it from scratch",
           "speakers": ["makevoid"],
           "abstract": "An overview about starting your app small and growing it bigger as you need, beginning with domain model classes \"sketched\" in ruby (yea, DDD) and then considering integrating various libs or implementing your own to reduce complexity and save time in the end.",
           "lang": "en"
         },
         {
-          "from": "6:05pm",
-          "to": "6:30pm",
+          "from": "18:05",
+          "to": "18:30",
           "title": "Greetings & Prizes"
         }
       ]
@@ -91,86 +91,86 @@
       "name": "Track 2",
       "schedule": [
         {
-          "from": "8:30am",
-          "to": "9:15am",
+          "from": "8:30",
+          "to": "9:15",
           "title": "Check In"
         },
         {
-          "from": "9:15am",
-          "to": "9:55am",
+          "from": "9:15",
+          "to": "9:55",
           "title": "Welcome & Keynote",
           "lang": "en"
         },
         {
-          "from": "9:55am",
-          "to": "10:35am",
+          "from": "9:55",
+          "to": "10:35",
           "title": "Coffee Break"
         },
         {
-          "from:": "10:35am",
-          "to": "11:35am",
+          "from": "10:35",
+          "to": "11:35",
           "title": "Opal, Ruby is back! ...on your browser!",
           "lang": "it",
           "track": 2,
-          "speaker": "elia",
+          "speakers": ["elia"],
           "abstract": "Opal is a production ready Ruby-to-Javascript compiler. In this presentation I will talk on how Ruby can be used to build awesome code for the browser. Keep applying all of your OO design skills having less context switch and increasing happiness!  This presentation will cover: - a general overview and why I feel so good doing Ruby on the client - some internals along explanation of implementing choices - real world (™) use cases (including code ported from the server to the browser) - fun! :-D"
         },
         {
-          "from": "11:35am",
-          "to": "12:35am",
+          "from": "11:35",
+          "to": "12:35",
           "title": "Securing your API via OAuth (2.0) and Ruby on Rails",
           "speakers": ["alleadel"],
           "lang": "en",
           "abstract": "Need a uniform and standard mechanism for authorizing clients to access remote services and resources securely? OAuth is what you’ve been searching for! OAuth is an open standard widely adopted over the Internet and many big companies started supporting it, e.g., Facebook, Google, etc. In this talk we explain OAuth protocol basics and theory, pointing out strengths and weaknesses. Eventually, we show how to implement a typical OAuth authorization scenario where an iOS client is authorized to consume services via OAuth, exploiting Ruby on Rails and Doorkeeper on the server side of the force."
         },
         {
-          "from": "12:35am",
-          "to": "1:35pm",
+          "from": "12:35",
+          "to": "13:35",
           "title": "Eseguire e monitorare applicazioni Rack con uWSGI",
           "speakers": ["unbit"],
           "lang": "it",
           "abstract": "Nato nel 2009 come semplice server per applicazioni WSGI, il progetto uWSGI in 4 anni e' cresciuto a dismisura diventando oramai un framework per costruire applicazioni di rete ad ogni livello. A meta' 2012 (dopo piu' di un anno di lavoro) e' stato finalmente completato il supporto per lo standard Rack (l'equivalente ruby di WSGI).Ora uWSGI puo' eseguire framework come RubyOnRails e Sinatra aggiungendo \"for free\" tutte le features che gli hanno permesso di diventare l'application server di riferimento in realta' come Reddit, DotCloud, Activestate Stackato, Washington post e molti altri. Il talk introdurra' brevemente il progetto per poi presentare un caso di uso reale, ovvero come e' stata costruita l'infrastruttura di mytable.it, uno dei piu' grandi (forse il piu' grande) portale in italia scritto in Ruby On Rails."
         },
         {
-          "from": "1:35pm",
-          "to": "2:50pm",
+          "from": "13:35",
+          "to": "14:50",
           "title": "Lunch"
         },
         {
-          "from": "2:50pm",
-          "to": "3:35pm",
+          "from": "14:50",
+          "to": "15:35",
           "title": "Ruby & la scienza",
           "speakers": ["ilpuccio", "fstrozzi"],
           "abstract": "Ruby anche scienza: la sua versatilità, insieme alle diverse implementazioni, offre nuove opportunità di utilizzo creando un ecosistema di strumenti e librerie applicabili a diverse discipline scientifice. Dalla biologia e bioinformatica, con il progetto BioRuby, alla matematica e statistica, con il progetto SciRuby, il numero di gemme e' in costante crescita (http://biogems.info). Nuove tematiche, come il web semantico e la gestione della conoscenza, insieme a tecniche di data mining, machine learning e visualizzazione, vengono studiate, sviluppate e sperimentate in occasione di eventi internazionali quali CodeFest e BioHakathon. Lo stimolo a migliorarci, avere nuove idee, diffondere le librerie e gli strumenti prodotti ci ha condotti, ormai dal 2009, a partecipare al programma Google Summer of Code raggiungendo, anno dopo anno, progetti di successo, coinvolgendo nuovi sviluppatori e una massa critica di mentori in grado di stimolare sempre più la comunità.",
           "lang": "it"
         },
         {
-          "from": "3:35pm",
-          "to": "4:20pm",
+          "from": "15:35",
+          "to": "16:20",
           "title": "The Client-Side on Ruby",
           "speakers": ["mulpat"],
           "abstract": "In this talk, I would like to look at the options that Ruby offers to serve client-side web applications. With the example of Backbone.JS I would like to discuss first the elements of a client-side web application (events, rendering, data transport), and how this influences a web application stack (= separation of concerns). Second, I would like to show how Rack and Sinatra can be used to serve directories of JavaScript files. Last, I want to show the relationship between Rack, Sprockets and the Asset Pipeline. Last, and I want to do a preview on loading multiple JavaScript files asynchronously through RequireJS-Rails.",
           "lang": "en"
         },
         {
-          "from": "4:20pm",
-          "to": "5:20pm",
+          "from": "16:20",
+          "to": "17:20",
           "title": "Rubymotion for fun and profits",
           "speakers": ["damicosimone"],
           "abstract": "Two years ago, at rubyday '11, I did a talk about Macruby and predicted the advent of something similar for the iOS platform. The day has come, today we got a quasi-mature semi-opensourced toolchain for developing apps for Apple devices. In this session I will introduce you to Rubymotion starting with a basic overview of what it's needed financially and in terms of know-how.  I'll show how it's blazing fast compared to ruby MRI and explain its limitations. I'll go through some of the most popular gems and show you how ruby idioms and patterns are insinuating in the obj-c community. Finally I will show come concrete code examples from my apps.",
           "lang": "it"
         },
         {
-          "from": "5:20pm",
-          "to": "6:05pm",
+          "from": "17:20",
+          "to": "18:05",
           "title": "Cooking lessons with Vim and Tmux",
           "speakers": ["cloud8421"],
           "abstract": "The purpose of the talk is to show how to tackle different tasks with a shell based environment composed of Vim, Tmux and other tools. The core idea is that we can use Rails conventions to make our workflow better. And being all of this modular, you can mix and match different solutions to fit your needs. From the technical standpoint, I would perform small tasks live, with a video fallback. Tasks include: - file and code navigation with ctags - smart interaction with a REPL - Running tests - Moving efficiently among models, controllers and views I will use Hermes (http://new-bamboo.github.com/Hermes/), a bootstrap script that configures a shell based development enviroment on Mac. I've started the project with Damon Davison, a fellow colleague, and it's been my production setup for months now. The main theme of the talk will be cooking: for example, having knife skills is important for any dish you want to prepare. In a similar fashion, being able to easily jump around files is also key in not breaking your flow.",
           "lang": "en"
         },
         {
-          "from": "6:05pm",
-          "to": "6:30pm",
+          "from": "18:05",
+          "to": "18:30",
           "title": "Greetings & Prizes"
         }
       ]

@@ -54,6 +54,9 @@
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:scheduleController];
     navigationController.tabBarItem.title = @"Agenda";
 
+    UIImage *image = [UIImage imageNamed:@"icon_agenda"];
+    [navigationController.tabBarItem setFinishedSelectedImage:image withFinishedUnselectedImage:image];
+
     return navigationController;
 }
 
@@ -62,6 +65,9 @@
     RDFavouritesViewController *favouritesController = [[RDFavouritesViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:favouritesController];
     navigationController.tabBarItem.title = @"Favourites";
+
+    UIImage *image = [UIImage imageNamed:@"icon_favourites"];
+    [navigationController.tabBarItem setFinishedSelectedImage:image withFinishedUnselectedImage:image];
 
     return navigationController;
 }
@@ -72,6 +78,9 @@
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:speakersController];
     navigationController.tabBarItem.title = @"Speakers";
 
+    UIImage *image = [UIImage imageNamed:@"icon_speakers"];
+    [navigationController.tabBarItem setFinishedSelectedImage:image withFinishedUnselectedImage:image];
+
     return navigationController;
 }
 
@@ -79,7 +88,10 @@
 {
     RDInfoViewController *infoViewController = [[RDInfoViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:infoViewController];
-    navigationController.tabBarItem.title = @"Info";
+    navigationController.tabBarItem.title = @"About";
+
+    UIImage *image = [UIImage imageNamed:@"icon_about"];
+    [navigationController.tabBarItem setFinishedSelectedImage:image withFinishedUnselectedImage:image];
 
     return navigationController;
 }

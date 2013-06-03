@@ -8,11 +8,14 @@
 
 #import "RDAppDelegate.h"
 #import "RDMainTabBarViewController.h"
+#import <dlfcn.h>
 
 @implementation RDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self customizeAppearance];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     self.window.rootViewController = [[RDMainTabBarViewController alloc] init];
@@ -48,6 +51,30 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)customizeAppearance
+{
+    UIImage *navBackgroundImage = [UIImage imageNamed:@"topbar"];
+    UIColor *rubyRedColor = [UIColor colorWithRed:171/255.0 green:60/255.0 blue:30/255.0 alpha:1.0];
+    UIFont *eurostileNavBarBold = [UIFont fontWithName:@"EurostileBold" size:21.0];
+    UIFont *eurostileTabBarBold = [UIFont fontWithName:@"EurostileBold" size:12.0];
+
+    [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{
+                                UITextAttributeTextColor: rubyRedColor,
+                                     UITextAttributeFont: eurostileNavBarBold,
+                         UITextAttributeTextShadowOffset: @0 }];
+
+    [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar"]];
+//    [[UITabBar appearance] setBackgroundColor:rubyRedColor];
+
+    [[UITabBarItem appearance] setTitleTextAttributes:@{
+                             UITextAttributeTextColor: [UIColor whiteColor],
+                                  UITextAttributeFont:eurostileTabBarBold}
+                                             forState:UIControlStateNormal];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque];
 }
 
 @end

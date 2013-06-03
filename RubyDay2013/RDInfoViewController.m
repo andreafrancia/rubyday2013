@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
 
-    self.title = @"Info";
+    self.title = @"About";
 }
 
 - (void)didReceiveMemoryWarning

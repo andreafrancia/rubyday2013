@@ -1,1 +1,10 @@
+PODS:
+  - SVSegmentedControl (0.2)
+
+DEPENDENCIES:
+  - SVSegmentedControl
+
+SPEC CHECKSUMS:
+  SVSegmentedControl: e874fc56c2a1efb9f597ddf0908101393f53fe96
+
 COCOAPODS: 0.20.2
