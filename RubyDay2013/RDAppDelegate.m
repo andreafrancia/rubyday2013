@@ -67,7 +67,7 @@
                          UITextAttributeTextShadowOffset: @0 }];
 
     [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar"]];
-//    [[UITabBar appearance] setBackgroundColor:rubyRedColor];
+    [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0.0, -2.0)];
 
     [[UITabBarItem appearance] setTitleTextAttributes:@{
                              UITextAttributeTextColor: [UIColor whiteColor],

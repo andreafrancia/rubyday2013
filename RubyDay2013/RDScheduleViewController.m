@@ -59,13 +59,23 @@
     for (NSDictionary *track in tracks)
         [tracksNames addObject:track[@"name"]];
 
+    UIColor *rubyRedColor = [UIColor colorWithRed:171/255.0 green:60/255.0 blue:30/255.0 alpha:1.0];
+
     tracksControl = [[SVSegmentedControl alloc] initWithSectionTitles:tracksNames];
     [tracksControl addTarget:self action:@selector(tracksControlChanged:) forControlEvents:UIControlEventValueChanged];
     tracksControl.frame = CGRectMake(0, 0, 320, 36);
     
-    tracksControl.cornerRadius = 0;
-    tracksControl.font = [UIFont fontWithName:@"EurostileBold" size:15];
+    tracksControl.cornerRadius = 3.0;
+    tracksControl.font = [UIFont fontWithName:@"EurostileBold" size:14];
+	tracksControl.textColor = rubyRedColor;
+    tracksControl.textShadowOffset = CGSizeMake(0, 0);
+    tracksControl.textShadowColor = [UIColor colorWithWhite:1.0 alpha:0.0];
     tracksControl.innerShadowColor = [UIColor colorWithRed:160/255.0 green:160/255.0 blue:160/255.0 alpha:1.0];
+    tracksControl.backgroundImage = [UIImage imageNamed:@"tracks_control_bg"];
+	tracksControl.crossFadeLabelsOnDrag = YES;
+    
+	tracksControl.thumb.tintColor = rubyRedColor;
+    tracksControl.thumb.textShadowColor = [UIColor colorWithWhite:0.5 alpha:1.0];
 
     [self.view addSubview:tracksControl];
 }

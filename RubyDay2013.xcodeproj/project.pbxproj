@@ -56,6 +56,7 @@
 		CE9E3F3F175C912F003FE09C /* icon_favourites@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F39175C912F003FE09C /* icon_favourites@2x.png */; };
 		CE9E3F42175C9302003FE09C /* row_accessory.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F40175C9302003FE09C /* row_accessory.png */; };
 		CE9E3F43175C9302003FE09C /* row_accessory@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F41175C9302003FE09C /* row_accessory@2x.png */; };
+		CE9E3F45175C95CA003FE09C /* tracks_control_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9E3F44175C95C9003FE09C /* tracks_control_bg@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +122,7 @@
 		CE9E3F39175C912F003FE09C /* icon_favourites@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_favourites@2x.png"; sourceTree = "<group>"; };
 		CE9E3F40175C9302003FE09C /* row_accessory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = row_accessory.png; sourceTree = "<group>"; };
 		CE9E3F41175C9302003FE09C /* row_accessory@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "row_accessory@2x.png"; sourceTree = "<group>"; };
+		CE9E3F44175C95C9003FE09C /* tracks_control_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tracks_control_bg@2x.png"; sourceTree = "<group>"; };
 		D24A81558A374930B2E82198 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -236,6 +238,7 @@
 				CE65537C1759EDCF00F0EE63 /* Default.png */,
 				CE65537E1759EDCF00F0EE63 /* Default@2x.png */,
 				CE6553801759EDCF00F0EE63 /* Default-568h@2x.png */,
+				CE9E3F44175C95C9003FE09C /* tracks_control_bg@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				CE9E3F3F175C912F003FE09C /* icon_favourites@2x.png in Resources */,
 				CE9E3F42175C9302003FE09C /* row_accessory.png in Resources */,
 				CE9E3F43175C9302003FE09C /* row_accessory@2x.png in Resources */,
+				CE9E3F45175C95CA003FE09C /* tracks_control_bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
