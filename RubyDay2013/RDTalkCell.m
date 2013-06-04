@@ -22,15 +22,12 @@
     return self;
 }
 
-- (void)setData:(NSDictionary *)data;
+- (void)setData:(NSDictionary *)data withFont:(UIFont *)regular andFontBold:(UIFont *)bold
 {
-    UIFont *eurostile = [UIFont fontWithName:@"Eurostile" size:15.0];
-    UIFont *eurostileBold = [UIFont fontWithName:@"EurostileBold" size:15.0];
-
-    self.to.font = eurostile;
-    self.from.font = eurostile;
-    self.title.font = eurostileBold;
-    self.speakers.font = eurostile;
+    self.to.font = regular;
+    self.from.font = regular;
+    self.title.font = bold;
+    self.speakers.font = regular;
     
     self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tablerow"]];
 

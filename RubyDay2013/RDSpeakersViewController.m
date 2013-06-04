@@ -16,6 +16,7 @@
 
 @implementation RDSpeakersViewController {
     NSArray *speakers;
+    UIFont *eurostileBold;
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -33,14 +34,25 @@
 
     self.title = @"Speakers";
 
+    eurostileBold = [UIFont fontWithName:@"EurostileBold" size:20.0];
     speakers = [[RDDatasource currentSource] speakers];
 
+    [self styleTable];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+- (void)styleTable
+{
+    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"pw_pattern"]];
+    self.tableView.tableHeaderView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tableheader"]];
+    self.tableView.tableFooterView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tablefooter"]];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -52,22 +64,49 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return speakers.count;
+    return speakers.count * 2 - 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *kCellIdentifier = @"Cell2";
+    static NSString *kSepIdentifier = @"CellSep";
 
-    if (cell == nil)
+    if (indexPath.row % 2 == 0)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
+
+        if (cell == nil)
+        {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCellIdentifier];
+            cell.textLabel.font = eurostileBold;
+            cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tablerow"]];
+        }
+
+        cell.textLabel.text = speakers[indexPath.row / 2][@"name"];
+
+        return cell;
     }
+    else
+    {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kSepIdentifier];
 
-    cell.textLabel.text = speakers[indexPath.row][@"name"];
+        if (cell == nil)
+        {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kSepIdentifier];
+            cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tablerowsep"]];
+        }
 
-    return cell;
+        return cell;
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row % 2 == 0)
+        return 45;
+    else
+        return 1;
 }
 
 /*

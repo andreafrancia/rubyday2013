@@ -16,6 +16,6 @@
 @property (retain, nonatomic) IBOutlet UILabel *speakers;
 @property (retain, nonatomic) IBOutlet UIImageView *accessory;
 
-- (void)setData:(NSDictionary *)data;
+- (void)setData:(NSDictionary *)data withFont:(UIFont *)regular andFontBold:(UIFont *)bold;
 
 @end

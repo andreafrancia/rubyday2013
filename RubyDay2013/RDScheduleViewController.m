@@ -21,6 +21,8 @@
     int currentTrack;
     NSArray *tracks;
     SVSegmentedControl *tracksControl;
+    UIFont *eurostile;
+    UIFont *eurostileBold;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -37,6 +39,9 @@
     [super viewDidLoad];
 
     self.title = @"Agenda";
+
+    eurostile = [UIFont fontWithName:@"Eurostile" size:15.0];
+    eurostileBold = [UIFont fontWithName:@"EurostileBold" size:15.0];
 
     dataSource = [RDDatasource currentSource];
     tracks = dataSource.tracks;
@@ -134,7 +139,7 @@
         NSArray *schedule = tracks[currentTrack][@"schedule"];
         NSDictionary *item = schedule[indexPath.row / 2];
 
-        [cell setData:item];
+        [cell setData:item withFont:eurostile andFontBold:eurostileBold];
 
         return cell;
     }

@@ -37,12 +37,12 @@
 - (void)loadTabs
 {
     UIViewController *agendaController = [self createAgendaController];
-    UIViewController *favouritesController = [self createFavouritesController];
+//    UIViewController *favouritesController = [self createFavouritesController];
     UIViewController *speakersController = [self createSpeakersController];
     UIViewController *infoController = [self createInfoController];
 
     [self setViewControllers:@[agendaController,
-                               favouritesController,
+//                               favouritesController,
                                speakersController,
                                infoController]];
 }
