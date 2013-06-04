@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BF8ACBCA04C04B3987E5D168 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 898D01480B714CBAB008474D /* libPods.a */; };
+		CE4178E8175E3616000CB68B /* RDSpeakerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4178E7175E3616000CB68B /* RDSpeakerCell.m */; };
+		CE4178EA175E3AD3000CB68B /* rubylang.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4178E9175E3AD3000CB68B /* rubylang.png */; };
+		CE4178EC175E3CDB000CB68B /* RDSpeakerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4178EB175E3CDB000CB68B /* RDSpeakerCell.xib */; };
 		CE482E0A175A247F00ABC235 /* RDMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE482E09175A247F00ABC235 /* RDMainTabBarViewController.m */; };
 		CE65536B1759EDCF00F0EE63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE65536A1759EDCF00F0EE63 /* UIKit.framework */; };
 		CE65536D1759EDCF00F0EE63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE65536C1759EDCF00F0EE63 /* Foundation.framework */; };
@@ -61,6 +64,10 @@
 
 /* Begin PBXFileReference section */
 		898D01480B714CBAB008474D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4178E6175E3616000CB68B /* RDSpeakerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDSpeakerCell.h; sourceTree = "<group>"; };
+		CE4178E7175E3616000CB68B /* RDSpeakerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDSpeakerCell.m; sourceTree = "<group>"; };
+		CE4178E9175E3AD3000CB68B /* rubylang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rubylang.png; sourceTree = "<group>"; };
+		CE4178EB175E3CDB000CB68B /* RDSpeakerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDSpeakerCell.xib; sourceTree = "<group>"; };
 		CE482E08175A247F00ABC235 /* RDMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMainTabBarViewController.h; sourceTree = "<group>"; };
 		CE482E09175A247F00ABC235 /* RDMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMainTabBarViewController.m; sourceTree = "<group>"; };
 		CE6553671759EDCF00F0EE63 /* RubyDay2013.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubyDay2013.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +205,9 @@
 				CE9E3F2F175BA647003FE09C /* RDTalkCell.h */,
 				CE9E3F30175BA647003FE09C /* RDTalkCell.m */,
 				CE9E3F32175BA67E003FE09C /* RDTalkCell.xib */,
+				CE4178E6175E3616000CB68B /* RDSpeakerCell.h */,
+				CE4178E7175E3616000CB68B /* RDSpeakerCell.m */,
+				CE4178EB175E3CDB000CB68B /* RDSpeakerCell.xib */,
 			);
 			path = RubyDay2013;
 			sourceTree = "<group>";
@@ -205,6 +215,7 @@
 		CE6553711759EDCF00F0EE63 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE4178E9175E3AD3000CB68B /* rubylang.png */,
 				CE9E3F2B175B953B003FE09C /* icon_agenda.png */,
 				CE9E3F2C175B953B003FE09C /* icon_agenda@2x.png */,
 				CE9E3F27175B9241003FE09C /* tabbar.png */,
@@ -332,6 +343,8 @@
 				CE9E3F42175C9302003FE09C /* row_accessory.png in Resources */,
 				CE9E3F43175C9302003FE09C /* row_accessory@2x.png in Resources */,
 				CE9E3F45175C95CA003FE09C /* tracks_control_bg@2x.png in Resources */,
+				CE4178EA175E3AD3000CB68B /* rubylang.png in Resources */,
+				CE4178EC175E3CDB000CB68B /* RDSpeakerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +397,7 @@
 				CE9E3F02175A3C2E003FE09C /* RDTalkViewController.m in Sources */,
 				CE9E3F07175A41D5003FE09C /* RDSpeakerViewController.m in Sources */,
 				CE9E3F31175BA647003FE09C /* RDTalkCell.m in Sources */,
+				CE4178E8175E3616000CB68B /* RDSpeakerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

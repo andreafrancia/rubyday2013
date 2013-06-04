@@ -66,6 +66,8 @@
                                      UITextAttributeFont: eurostileNavBarBold,
                          UITextAttributeTextShadowOffset: @0 }];
 
+    [[UIBarButtonItem appearance] setTintColor:rubyRedColor];
+
     [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar"]];
     [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0.0, -2.0)];
 

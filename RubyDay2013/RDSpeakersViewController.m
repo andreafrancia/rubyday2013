@@ -9,6 +9,7 @@
 #import "RDSpeakersViewController.h"
 #import "RDDatasource.h"
 #import "RDSpeakerViewController.h"
+#import "RDSpeakerCell.h"
 
 @interface RDSpeakersViewController ()
 
@@ -16,6 +17,7 @@
 
 @implementation RDSpeakersViewController {
     NSArray *speakers;
+    UIFont *eurostile;
     UIFont *eurostileBold;
 }
 
@@ -34,7 +36,9 @@
 
     self.title = @"Speakers";
 
-    eurostileBold = [UIFont fontWithName:@"EurostileBold" size:20.0];
+    eurostile = [UIFont fontWithName:@"Eurostile" size:15.0];
+    eurostileBold = [UIFont fontWithName:@"EurostileBold" size:15.0];
+
     speakers = [[RDDatasource currentSource] speakers];
 
     [self styleTable];
@@ -51,6 +55,9 @@
     self.tableView.tableHeaderView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tableheader"]];
     self.tableView.tableFooterView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tablefooter"]];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+
+    UINib *nib = [UINib nibWithNibName:@"RDSpeakerCell" bundle:[NSBundle mainBundle]];
+    [self.tableView registerNib:nib forCellReuseIdentifier:@"Cell"];
 }
 
 
@@ -69,21 +76,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *kCellIdentifier = @"Cell2";
+    static NSString *kCellIdentifier = @"Cell";
     static NSString *kSepIdentifier = @"CellSep";
 
     if (indexPath.row % 2 == 0)
     {
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
+        RDSpeakerCell *cell = (RDSpeakerCell *)[tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
 
-        if (cell == nil)
-        {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCellIdentifier];
-            cell.textLabel.font = eurostileBold;
-            cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tablerow"]];
-        }
-
-        cell.textLabel.text = speakers[indexPath.row / 2][@"name"];
+        NSDictionary *speaker = speakers[indexPath.row / 2];
+        [cell setData:speaker withFont:eurostile andFontBold:eurostileBold];
 
         return cell;
     }
@@ -152,7 +153,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDictionary *speakerInfo = speakers[indexPath.row];
+    NSDictionary *speakerInfo = speakers[indexPath.row / 2];
 
     RDSpeakerViewController *speakerViewController = [[RDSpeakerViewController alloc] initWithSpeakerDictionary:speakerInfo];
     [self.navigationController pushViewController:speakerViewController animated:YES];

@@ -1,3 +1,4 @@
 platform :ios, '5.1'
 
- pod 'SVSegmentedControl'
+pod 'SVSegmentedControl'
+pod 'SDWebImage'

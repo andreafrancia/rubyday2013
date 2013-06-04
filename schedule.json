@@ -119,7 +119,7 @@
           "from": "11:35",
           "to": "12:35",
           "title": "Securing your API via OAuth (2.0) and Ruby on Rails",
-          "speakers": ["alleadel"],
+          "speakers": ["adellamotta"],
           "lang": "en",
           "abstract": "Need a uniform and standard mechanism for authorizing clients to access remote services and resources securely? OAuth is what you’ve been searching for! OAuth is an open standard widely adopted over the Internet and many big companies started supporting it, e.g., Facebook, Google, etc. In this talk we explain OAuth protocol basics and theory, pointing out strengths and weaknesses. Eventually, we show how to implement a typical OAuth authorization scenario where an iOS client is authorized to consume services via OAuth, exploiting Ruby on Rails and Doorkeeper on the server side of the force."
         },
@@ -203,7 +203,7 @@
       "bio": "A Ruby/Rails developer @mikamai, catholic, who loves his beautiful wife and his wonderful children. Opal core team member."
     },
     {
-      "handle": "alleadel",
+      "handle": "adellamotta",
       "name": "Alessio Della Motta",
       "bio": "Alessio Della Motta is a software architect and engineer interested in almost every field of computing. His technical background covers a wide range of technologies and languages and his focus is on enterprise and distributed systems. Alessio completed his master’s degree at the University of California, Irvine in 2010. Then he started working as an IT consultant specializing in EAI and SOA. Now he manages and designs software solutions at Mavigex, a small company in Bologna. In his spare time, Alessio likes to play guitar, football and to read big divulgative tomes on math and physics. "
     },

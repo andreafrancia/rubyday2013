@@ -1,10 +1,15 @@
 PODS:
+  - SDWebImage (3.2):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.2)
   - SVSegmentedControl (0.2)
 
 DEPENDENCIES:
+  - SDWebImage
   - SVSegmentedControl
 
 SPEC CHECKSUMS:
+  SDWebImage: f742ac91b65bd34b6d452325115e2ded3a73380e
   SVSegmentedControl: e874fc56c2a1efb9f597ddf0908101393f53fe96
 
 COCOAPODS: 0.20.2
