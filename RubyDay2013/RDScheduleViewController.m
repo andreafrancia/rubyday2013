@@ -11,6 +11,7 @@
 #import "RDTalkViewController.h"
 #import "SVSegmentedControl.h"
 #import "RDTalkCell.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface RDScheduleViewController ()
 
@@ -81,6 +82,10 @@
     
 	tracksControl.thumb.tintColor = rubyRedColor;
     tracksControl.thumb.textShadowColor = [UIColor colorWithWhite:0.5 alpha:1.0];
+
+    tracksControl.layer.shadowOffset = CGSizeMake(0, 5);
+    tracksControl.layer.shadowRadius = 5;
+    tracksControl.layer.shadowOpacity = 0.5;
 
     [self.view addSubview:tracksControl];
 }

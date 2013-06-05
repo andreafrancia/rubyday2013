@@ -1,7 +1,7 @@
 {
   "tracks": [
     {
-      "name": "Track 1",
+      "name": "Track #1",
       "schedule": [
         {
           "from": "8:30",
@@ -45,7 +45,7 @@
         },
         {
           "from": "13:35",
-          "to": "14:40",
+          "to": "14:50",
           "title": "Lunch"
         },
         {
@@ -73,7 +73,7 @@
           "lang": "en"
         },
         {
-          "from": "17:30",
+          "from": "17:20",
           "to": "18:05",
           "title": "Code it from scratch",
           "speakers": ["makevoid"],
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "name": "Track 2",
+      "name": "Track #2",
       "schedule": [
         {
           "from": "8:30",
