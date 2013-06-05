@@ -110,4 +110,18 @@ NSInteger sortSpeakers(id _speaker1, id _speaker2, void *context)
     return talks;
 }
 
+- (NSString *)trackTitleFromTalk:(NSDictionary *)talkInfo
+{
+    for (NSDictionary *track in tracks)
+    {
+        for (NSDictionary *talk in track[@"schedule"])
+        {
+            if ([talk isEqualToDictionary:talkInfo])
+                return track[@"name"];
+        }
+    }
+
+    return @"Track #???";
+}
+
 @end

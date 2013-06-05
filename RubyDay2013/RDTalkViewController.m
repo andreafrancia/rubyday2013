@@ -11,6 +11,7 @@
 #import "RDDatasource.h"
 #import "RDSpeakerViewController.h"
 #import "RDSpeakerCell.h"
+#import "RDTalkInfoCell.h"
 
 @interface RDTalkViewController ()
 
@@ -20,6 +21,7 @@
     NSDictionary *talkInfo;
     NSArray *speakers;
     UIFont *eurostile;
+    UIFont *eurostileTitle;
     UIFont *eurostileBold;
     UIFont *eurostileBoldTitle;
 }
@@ -29,6 +31,7 @@ static NSString *kSepIdentifier = @"CellSep";
 static NSString *kTitleCellIdentifier = @"TitleCell";
 static NSString *kSpeakersCellIdentifier = @"SpeakersCell";
 static NSString *kAbstractCellIdentifier = @"AbstractCell";
+static NSString *kTalkInfoCellIdentifier = @"TalkInfoCell";
 
 -(id)initWithTalkDictionary:(NSDictionary *)talkDictionary
 {
@@ -49,6 +52,7 @@ static NSString *kAbstractCellIdentifier = @"AbstractCell";
     self.title = @"Talk";
 
     eurostile = [UIFont fontWithName:@"Eurostile" size:15.0];
+    eurostileTitle = [UIFont fontWithName:@"Eurostile" size:16.0];
     eurostileBold = [UIFont fontWithName:@"EurostileBold" size:15.0];
     eurostileBoldTitle = [UIFont fontWithName:@"EurostileBold" size:18.0];
 
@@ -72,21 +76,20 @@ static NSString *kAbstractCellIdentifier = @"AbstractCell";
     UINib *nib1 = [UINib nibWithNibName:@"RDSpeakerCell" bundle:[NSBundle mainBundle]];
     [self.tableView registerNib:nib1 forCellReuseIdentifier:kSpeakerCellIdentifier];
 
-//    UINib *nib2 = [UINib nibWithNibName:@"RDTalkTitleCell" bundle:[NSBundle mainBundle]];
-//    [self.tableView registerNib:nib2 forCellReuseIdentifier:kTitleCellIdentifier];
+    UINib *nib2 = [UINib nibWithNibName:@"RDTalkInfoCell" bundle:[NSBundle mainBundle]];
+    [self.tableView registerNib:nib2 forCellReuseIdentifier:kTalkInfoCellIdentifier];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3 + speakers.count * 2;
+    return 4 + speakers.count * 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -94,10 +97,6 @@ static NSString *kAbstractCellIdentifier = @"AbstractCell";
     if (indexPath.row == 0)
     {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kTitleCellIdentifier];
-//        RDTalkTitleCell *cell = [tableView dequeueReusableCellWithIdentifier:kTitleCellIdentifier];
-//
-//        [cell setData:@{@"title": talkInfo[@"title"],
-//                        @"speakers":[[RDDatasource currentSource] speakersListFromHandles:talkInfo[@"speakers"]]}];
 
         if (cell == nil)
         {
@@ -168,7 +167,7 @@ static NSString *kAbstractCellIdentifier = @"AbstractCell";
         text.frame = CGRectMake(cell.frame.origin.x + 20,
                                 cell.frame.origin.y,
                                 cell.frame.size.width - 40,
-                                size.height + 40);
+                                size.height + 30);
         text.editable = NO;
         text.scrollEnabled = NO;
         text.text = talkInfo[@"abstract"];
@@ -177,9 +176,20 @@ static NSString *kAbstractCellIdentifier = @"AbstractCell";
 
         return cell;
     }
+    else if (indexPath.row == 3)
+    {
+        RDTalkInfoCell *cell = (RDTalkInfoCell *)[tableView dequeueReusableCellWithIdentifier:kTalkInfoCellIdentifier];
+
+        NSDictionary *data = @{@"time": [NSString stringWithFormat:@"%@ - %@", talkInfo[@"from"], talkInfo[@"to"]],
+                               @"track": [[RDDatasource currentSource] trackTitleFromTalk:talkInfo]};
+
+        [cell setData:data withFont:eurostileTitle andFontBold:eurostileBoldTitle];
+
+        return cell;
+    }
     else
     {
-        unsigned int index = indexPath.row - 3;
+        unsigned int index = indexPath.row - 4;
 
         if (index % 2 == 0)
         {
@@ -219,11 +229,15 @@ static NSString *kAbstractCellIdentifier = @"AbstractCell";
     else if (indexPath.row == 2)
     {
         CGSize size = [talkInfo[@"abstract"] sizeWithFont:eurostile constrainedToSize:CGSizeMake(tableView.frame.size.width - 40, 999) lineBreakMode:NSLineBreakByWordWrapping];
-        return size.height + 40;
+        return size.height + 30;
+    }
+    else if (indexPath.row == 3)
+    {
+        return 45;
     }
     else
     {
-        unsigned int index = indexPath.row - 3;
+        unsigned int index = indexPath.row - 4;
 
         if (index % 2 == 0)
             return 1;
@@ -275,9 +289,9 @@ static NSString *kAbstractCellIdentifier = @"AbstractCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row > 2)
+    if (indexPath.row > 3)
     {
-        unsigned int index = indexPath.row - 3;
+        unsigned int index = indexPath.row - 4;
 
         if (index % 2 == 1)
         {
