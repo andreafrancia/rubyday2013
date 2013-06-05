@@ -34,8 +34,9 @@ static RDDatasource *dataSource = nil;
 
     if (self)
     {
-        NSURL *url = [NSURL URLWithString:@"http://webrain.it/rubyday2013/content.json"];
-        NSData* data = [NSData dataWithContentsOfURL:url];
+        //NSURL *url = [NSURL URLWithString:@"http://webrain.it/rubyday2013/content.json"];
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"schedule" ofType:@"json"];
+        NSData* data = [NSData dataWithContentsOfFile:path];
         NSError *error;
         NSDictionary *content = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
 
@@ -74,6 +75,21 @@ NSInteger sortSpeakers(id _speaker1, id _speaker2, void *context)
             return speaker;
 
     return @{};
+}
+
+- (NSString *)speakersListFromHandles:(NSArray *)handles
+{
+    NSMutableString *speakersStr = [[NSMutableString alloc] init];
+
+    for (NSString *speaker in handles)
+    {
+        NSDictionary *speakerInfo = [self speakerWithTwitterHandle:speaker];
+
+        [speakersStr appendString:speakerInfo[@"name"]];
+        [speakersStr appendString:@" - "];
+    }
+
+    return [speakersStr substringToIndex:speakersStr.length - 3];
 }
 
 @end

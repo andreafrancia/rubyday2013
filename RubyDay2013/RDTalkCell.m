@@ -45,15 +45,7 @@
         self.speakers.hidden = NO;
         self.accessory.hidden = NO;
 
-        NSMutableString *speakersStr = [[NSMutableString alloc] init];
-        for (NSString *speaker in data[@"speakers"])
-        {
-            NSDictionary *speakerInfo = [[RDDatasource currentSource] speakerWithTwitterHandle:speaker];
-
-            [speakersStr appendString:speakerInfo[@"name"]];
-            [speakersStr appendString:@" - "];
-        }
-        self.speakers.text = [speakersStr substringToIndex:speakersStr.length - 3];
+        self.speakers.text = [[RDDatasource currentSource] speakersListFromHandles:data[@"speakers"]];
     }
 }
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RDTalkViewController : UIViewController
+@interface RDTalkViewController : UITableViewController
 
 -(id)initWithTalkDictionary:(NSDictionary *)talkDictionary;
 
