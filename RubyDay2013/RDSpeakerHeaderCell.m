@@ -37,9 +37,8 @@
 
     name.text = data[@"name"];
     handle.text = [NSString stringWithFormat:@"@%@", data[@"handle"]];
-    
-    NSString *avatarUrl = [NSString stringWithFormat:@"http://api.twitter.com/1/users/profile_image?screen_name=%@&size=original", data[@"handle"]];
-    [avatar setImageWithURL:[NSURL URLWithString:avatarUrl] placeholderImage:[UIImage imageNamed:@"rubylang"]];
+
+    [avatar setImage:[UIImage imageNamed:[NSString stringWithFormat:@"twitter_%@", data[@"handle"]]]];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

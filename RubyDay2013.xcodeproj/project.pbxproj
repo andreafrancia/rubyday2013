@@ -30,6 +30,22 @@
 		CE417928175F95A2000CB68B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41791C175F89F5000CB68B /* Icon.png */; };
 		CE41792B175FA61F000CB68B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41792A175FA61E000CB68B /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CE41792F175FA6DB000CB68B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE41792E175FA6DB000CB68B /* SystemConfiguration.framework */; };
+		CE417940175FB369000CB68B /* twitter_adellamotta.png in Resources */ = {isa = PBXBuildFile; fileRef = CE417930175FB366000CB68B /* twitter_adellamotta.png */; };
+		CE417941175FB369000CB68B /* twitter_arkh4m.png in Resources */ = {isa = PBXBuildFile; fileRef = CE417931175FB366000CB68B /* twitter_arkh4m.png */; };
+		CE417942175FB369000CB68B /* twitter_cloud8421.png in Resources */ = {isa = PBXBuildFile; fileRef = CE417932175FB366000CB68B /* twitter_cloud8421.png */; };
+		CE417943175FB369000CB68B /* twitter_damicosimone.png in Resources */ = {isa = PBXBuildFile; fileRef = CE417933175FB366000CB68B /* twitter_damicosimone.png */; };
+		CE417944175FB369000CB68B /* twitter_elia.png in Resources */ = {isa = PBXBuildFile; fileRef = CE417934175FB366000CB68B /* twitter_elia.png */; };
+		CE417945175FB369000CB68B /* twitter_emadb.png in Resources */ = {isa = PBXBuildFile; fileRef = CE417935175FB366000CB68B /* twitter_emadb.png */; };
+		CE417946175FB369000CB68B /* twitter_flaurita.png in Resources */ = {isa = PBXBuildFile; fileRef = CE417936175FB367000CB68B /* twitter_flaurita.png */; };
+		CE417947175FB369000CB68B /* twitter_fstrozzi.png in Resources */ = {isa = PBXBuildFile; fileRef = CE417937175FB367000CB68B /* twitter_fstrozzi.png */; };
+		CE417948175FB369000CB68B /* twitter_ilpuccio.png in Resources */ = {isa = PBXBuildFile; fileRef = CE417938175FB367000CB68B /* twitter_ilpuccio.png */; };
+		CE417949175FB369000CB68B /* twitter_jodosha.png in Resources */ = {isa = PBXBuildFile; fileRef = CE417939175FB367000CB68B /* twitter_jodosha.png */; };
+		CE41794A175FB369000CB68B /* twitter_makevoid.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41793A175FB368000CB68B /* twitter_makevoid.png */; };
+		CE41794B175FB369000CB68B /* twitter_mulpat.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41793B175FB369000CB68B /* twitter_mulpat.png */; };
+		CE41794C175FB369000CB68B /* twitter_razielgn.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41793C175FB369000CB68B /* twitter_razielgn.png */; };
+		CE41794D175FB369000CB68B /* twitter_steffoz.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41793D175FB369000CB68B /* twitter_steffoz.png */; };
+		CE41794E175FB369000CB68B /* twitter_stefontanelli.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41793E175FB369000CB68B /* twitter_stefontanelli.png */; };
+		CE41794F175FB369000CB68B /* twitter_unbit.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41793F175FB369000CB68B /* twitter_unbit.png */; };
 		CE482E0A175A247F00ABC235 /* RDMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE482E09175A247F00ABC235 /* RDMainTabBarViewController.m */; };
 		CE65536B1759EDCF00F0EE63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE65536A1759EDCF00F0EE63 /* UIKit.framework */; };
 		CE65536D1759EDCF00F0EE63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE65536C1759EDCF00F0EE63 /* Foundation.framework */; };
@@ -109,6 +125,22 @@
 		CE41792A175FA61E000CB68B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		CE41792C175FA6C9000CB68B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CE41792E175FA6DB000CB68B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CE417930175FB366000CB68B /* twitter_adellamotta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_adellamotta.png; sourceTree = "<group>"; };
+		CE417931175FB366000CB68B /* twitter_arkh4m.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_arkh4m.png; sourceTree = "<group>"; };
+		CE417932175FB366000CB68B /* twitter_cloud8421.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_cloud8421.png; sourceTree = "<group>"; };
+		CE417933175FB366000CB68B /* twitter_damicosimone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_damicosimone.png; sourceTree = "<group>"; };
+		CE417934175FB366000CB68B /* twitter_elia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_elia.png; sourceTree = "<group>"; };
+		CE417935175FB366000CB68B /* twitter_emadb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_emadb.png; sourceTree = "<group>"; };
+		CE417936175FB367000CB68B /* twitter_flaurita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_flaurita.png; sourceTree = "<group>"; };
+		CE417937175FB367000CB68B /* twitter_fstrozzi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_fstrozzi.png; sourceTree = "<group>"; };
+		CE417938175FB367000CB68B /* twitter_ilpuccio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_ilpuccio.png; sourceTree = "<group>"; };
+		CE417939175FB367000CB68B /* twitter_jodosha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_jodosha.png; sourceTree = "<group>"; };
+		CE41793A175FB368000CB68B /* twitter_makevoid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_makevoid.png; sourceTree = "<group>"; };
+		CE41793B175FB369000CB68B /* twitter_mulpat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_mulpat.png; sourceTree = "<group>"; };
+		CE41793C175FB369000CB68B /* twitter_razielgn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_razielgn.png; sourceTree = "<group>"; };
+		CE41793D175FB369000CB68B /* twitter_steffoz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_steffoz.png; sourceTree = "<group>"; };
+		CE41793E175FB369000CB68B /* twitter_stefontanelli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_stefontanelli.png; sourceTree = "<group>"; };
+		CE41793F175FB369000CB68B /* twitter_unbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_unbit.png; sourceTree = "<group>"; };
 		CE482E08175A247F00ABC235 /* RDMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMainTabBarViewController.h; sourceTree = "<group>"; };
 		CE482E09175A247F00ABC235 /* RDMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMainTabBarViewController.m; sourceTree = "<group>"; };
 		CE6553671759EDCF00F0EE63 /* RubyDay2013.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubyDay2013.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -271,6 +303,22 @@
 		CE6553711759EDCF00F0EE63 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE417930175FB366000CB68B /* twitter_adellamotta.png */,
+				CE417931175FB366000CB68B /* twitter_arkh4m.png */,
+				CE417932175FB366000CB68B /* twitter_cloud8421.png */,
+				CE417933175FB366000CB68B /* twitter_damicosimone.png */,
+				CE417934175FB366000CB68B /* twitter_elia.png */,
+				CE417935175FB366000CB68B /* twitter_emadb.png */,
+				CE417936175FB367000CB68B /* twitter_flaurita.png */,
+				CE417937175FB367000CB68B /* twitter_fstrozzi.png */,
+				CE417938175FB367000CB68B /* twitter_ilpuccio.png */,
+				CE417939175FB367000CB68B /* twitter_jodosha.png */,
+				CE41793A175FB368000CB68B /* twitter_makevoid.png */,
+				CE41793B175FB369000CB68B /* twitter_mulpat.png */,
+				CE41793C175FB369000CB68B /* twitter_razielgn.png */,
+				CE41793D175FB369000CB68B /* twitter_steffoz.png */,
+				CE41793E175FB369000CB68B /* twitter_stefontanelli.png */,
+				CE41793F175FB369000CB68B /* twitter_unbit.png */,
 				CE417916175F859E000CB68B /* webrain_logo.png */,
 				CE417910175F8596000CB68B /* webrain_logo@2x.png */,
 				CE417911175F8596000CB68B /* logo.png */,
@@ -419,6 +467,22 @@
 				CE417917175F859E000CB68B /* webrain_logo.png in Resources */,
 				CE417927175F95A0000CB68B /* Icon@2x.png in Resources */,
 				CE417928175F95A2000CB68B /* Icon.png in Resources */,
+				CE417940175FB369000CB68B /* twitter_adellamotta.png in Resources */,
+				CE417941175FB369000CB68B /* twitter_arkh4m.png in Resources */,
+				CE417942175FB369000CB68B /* twitter_cloud8421.png in Resources */,
+				CE417943175FB369000CB68B /* twitter_damicosimone.png in Resources */,
+				CE417944175FB369000CB68B /* twitter_elia.png in Resources */,
+				CE417945175FB369000CB68B /* twitter_emadb.png in Resources */,
+				CE417946175FB369000CB68B /* twitter_flaurita.png in Resources */,
+				CE417947175FB369000CB68B /* twitter_fstrozzi.png in Resources */,
+				CE417948175FB369000CB68B /* twitter_ilpuccio.png in Resources */,
+				CE417949175FB369000CB68B /* twitter_jodosha.png in Resources */,
+				CE41794A175FB369000CB68B /* twitter_makevoid.png in Resources */,
+				CE41794B175FB369000CB68B /* twitter_mulpat.png in Resources */,
+				CE41794C175FB369000CB68B /* twitter_razielgn.png in Resources */,
+				CE41794D175FB369000CB68B /* twitter_steffoz.png in Resources */,
+				CE41794E175FB369000CB68B /* twitter_stefontanelli.png in Resources */,
+				CE41794F175FB369000CB68B /* twitter_unbit.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

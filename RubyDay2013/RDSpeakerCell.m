@@ -8,7 +8,6 @@
 
 #import "RDSpeakerCell.h"
 #import <QuartzCore/QuartzCore.h>
-#import <SDWebImage/UIImageView+WebCache.h>
 
 @implementation RDSpeakerCell
 
@@ -36,8 +35,7 @@
     self.title.text = data[@"name"];
     self.speakers.text = [NSString stringWithFormat:@"@%@", data[@"handle"]];
     
-    NSString *avatarUrl = [NSString stringWithFormat:@"http://api.twitter.com/1/users/profile_image?screen_name=%@&size=bigger", data[@"handle"]];
-    [self.avatar setImageWithURL:[NSURL URLWithString:avatarUrl] placeholderImage:[UIImage imageNamed:@"rubylang"]];
+    [self.avatar setImage:[UIImage imageNamed:[NSString stringWithFormat:@"twitter_%@", data[@"handle"]]]];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

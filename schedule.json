@@ -3,10 +3,10 @@
     "http://rubyday.it/images/sponsors/mikamai.png",
     "http://rubyday.it/images/sponsors/github.png",
     "http://rubyday.it/images/sponsors/dnsimple.png",
-    "https://www.tddium.com/images/solano_logo.png",
+    "http://webrain.it/solano_logo.png",
     "http://media.pragprog.com/images/cms/logos/Bookshelf_4in.png",
     "http://unfusion.kunsan.ac.kr/word/pds-image/balsamiq-logo2.jpg",
-    "http://upload.wikimedia.org/wikipedia/it/a/a2/Logo_Universit%C3%A0_Milano-Bicocca.jpg",
+    "http://upload.wikimedia.org/wikipedia/it/a/a2/Logo_Universit%C3%A0_Milano-Bicocca.jpg"
   ],
   "tracks": [
     {
@@ -265,6 +265,6 @@
       "handle": "cloud8421",
       "name": "Claudio Ortolina",
       "bio": "Hello! My name is Claudio, I'm an italian developer currently living in London and I work for New Bamboo (http://new-bamboo.co.uk). I've been a Rails developer for a couple of years, with experience into the full stack (servers and puppet, plain old ruby/rails and coffeescript/javascript with tools like Backbone.js and Require.js.)"
-    },
+    }
   ]
 }
