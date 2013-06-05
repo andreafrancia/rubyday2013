@@ -18,6 +18,7 @@
 		CE4178FF175F6DA9000CB68B /* RDSpeakerHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4178FE175F6DA9000CB68B /* RDSpeakerHeaderCell.xib */; };
 		CE417902175F74E8000CB68B /* RDTalkInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE417901175F74E7000CB68B /* RDTalkInfoCell.m */; };
 		CE417904175F74F6000CB68B /* RDTalkInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE417903175F74F6000CB68B /* RDTalkInfoCell.xib */; };
+		CE417906175F7C0D000CB68B /* rubylang@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE417905175F7C0D000CB68B /* rubylang@2x.png */; };
 		CE482E0A175A247F00ABC235 /* RDMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE482E09175A247F00ABC235 /* RDMainTabBarViewController.m */; };
 		CE65536B1759EDCF00F0EE63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE65536A1759EDCF00F0EE63 /* UIKit.framework */; };
 		CE65536D1759EDCF00F0EE63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE65536C1759EDCF00F0EE63 /* Foundation.framework */; };
@@ -82,6 +83,7 @@
 		CE417900175F74E7000CB68B /* RDTalkInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDTalkInfoCell.h; sourceTree = "<group>"; };
 		CE417901175F74E7000CB68B /* RDTalkInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDTalkInfoCell.m; sourceTree = "<group>"; };
 		CE417903175F74F6000CB68B /* RDTalkInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDTalkInfoCell.xib; sourceTree = "<group>"; };
+		CE417905175F7C0D000CB68B /* rubylang@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rubylang@2x.png"; sourceTree = "<group>"; };
 		CE482E08175A247F00ABC235 /* RDMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMainTabBarViewController.h; sourceTree = "<group>"; };
 		CE482E09175A247F00ABC235 /* RDMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMainTabBarViewController.m; sourceTree = "<group>"; };
 		CE6553671759EDCF00F0EE63 /* RubyDay2013.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubyDay2013.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +237,7 @@
 			children = (
 				CE4178F4175F3EE1000CB68B /* schedule.json */,
 				CE4178E9175E3AD3000CB68B /* rubylang.png */,
+				CE417905175F7C0D000CB68B /* rubylang@2x.png */,
 				CE9E3F2B175B953B003FE09C /* icon_agenda.png */,
 				CE9E3F2C175B953B003FE09C /* icon_agenda@2x.png */,
 				CE9E3F27175B9241003FE09C /* tabbar.png */,
@@ -367,6 +370,7 @@
 				CE4178FA175F69AC000CB68B /* RDSpeakerViewController.xib in Resources */,
 				CE4178FF175F6DA9000CB68B /* RDSpeakerHeaderCell.xib in Resources */,
 				CE417904175F74F6000CB68B /* RDTalkInfoCell.xib in Resources */,
+				CE417906175F7C0D000CB68B /* rubylang@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
