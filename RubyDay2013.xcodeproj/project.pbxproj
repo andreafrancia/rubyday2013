@@ -28,6 +28,8 @@
 		CE417917175F859E000CB68B /* webrain_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE417916175F859E000CB68B /* webrain_logo.png */; };
 		CE417927175F95A0000CB68B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41791E175F8A02000CB68B /* Icon@2x.png */; };
 		CE417928175F95A2000CB68B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41791C175F89F5000CB68B /* Icon.png */; };
+		CE41792B175FA61F000CB68B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41792A175FA61E000CB68B /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE41792F175FA6DB000CB68B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE41792E175FA6DB000CB68B /* SystemConfiguration.framework */; };
 		CE482E0A175A247F00ABC235 /* RDMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE482E09175A247F00ABC235 /* RDMainTabBarViewController.m */; };
 		CE65536B1759EDCF00F0EE63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE65536A1759EDCF00F0EE63 /* UIKit.framework */; };
 		CE65536D1759EDCF00F0EE63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE65536C1759EDCF00F0EE63 /* Foundation.framework */; };
@@ -103,6 +105,10 @@
 		CE417916175F859E000CB68B /* webrain_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = webrain_logo.png; sourceTree = "<group>"; };
 		CE41791C175F89F5000CB68B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		CE41791E175F8A02000CB68B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		CE417929175FA61D000CB68B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CE41792A175FA61E000CB68B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CE41792C175FA6C9000CB68B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CE41792E175FA6DB000CB68B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CE482E08175A247F00ABC235 /* RDMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMainTabBarViewController.h; sourceTree = "<group>"; };
 		CE482E09175A247F00ABC235 /* RDMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMainTabBarViewController.m; sourceTree = "<group>"; };
 		CE6553671759EDCF00F0EE63 /* RubyDay2013.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubyDay2013.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE41792F175FA6DB000CB68B /* SystemConfiguration.framework in Frameworks */,
 				CE65536B1759EDCF00F0EE63 /* UIKit.framework in Frameworks */,
 				CE65536D1759EDCF00F0EE63 /* Foundation.framework in Frameworks */,
 				CE65536F1759EDCF00F0EE63 /* CoreGraphics.framework in Frameworks */,
@@ -184,6 +191,8 @@
 		CE65535E1759EDCF00F0EE63 = {
 			isa = PBXGroup;
 			children = (
+				CE41792E175FA6DB000CB68B /* SystemConfiguration.framework */,
+				CE41792C175FA6C9000CB68B /* CFNetwork.framework */,
 				CE41791E175F8A02000CB68B /* Icon@2x.png */,
 				CE41791C175F89F5000CB68B /* Icon.png */,
 				CE6553701759EDCF00F0EE63 /* RubyDay2013 */,
@@ -230,6 +239,8 @@
 				CE9E3EF7175A273D003FE09C /* RDInfoViewController.h */,
 				CE9E3EF8175A273D003FE09C /* RDInfoViewController.m */,
 				CE417907175F8005000CB68B /* RDInfoViewController.xib */,
+				CE417929175FA61D000CB68B /* Reachability.h */,
+				CE41792A175FA61E000CB68B /* Reachability.m */,
 				CE9E3EFC175A2D97003FE09C /* RDDatasource.h */,
 				CE9E3EFD175A2D97003FE09C /* RDDatasource.m */,
 				CE9E3EFF175A3C2E003FE09C /* RDTalkViewController.h */,
@@ -464,6 +475,7 @@
 				CE4178FD175F6D7C000CB68B /* RDSpeakerHeaderCell.m in Sources */,
 				CE417902175F74E8000CB68B /* RDTalkInfoCell.m in Sources */,
 				CE41790F175F8533000CB68B /* RDInfoCell.m in Sources */,
+				CE41792B175FA61F000CB68B /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

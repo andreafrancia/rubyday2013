@@ -7,6 +7,7 @@
 //
 
 #import "RDDatasource.h"
+#import "Reachability.h"
 
 @implementation RDDatasource {
     NSArray *tracks;
@@ -35,9 +36,21 @@ static RDDatasource *dataSource = nil;
 
     if (self)
     {
-        NSURL *url = [NSURL URLWithString:@"http://webrain.it/rubyday2013/content.json"];
-//        NSString *path = [[NSBundle mainBundle] pathForResource:@"schedule" ofType:@"json"];
-        NSData* data = [NSData dataWithContentsOfURL:url];
+        Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
+        NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
+
+        NSData* data = nil;
+
+        if (networkStatus == NotReachable) {
+            NSString *path = [[NSBundle mainBundle] pathForResource:@"schedule" ofType:@"json"];
+            data = [NSData dataWithContentsOfFile:path];
+        }
+        else
+        {
+            NSURL *url = [NSURL URLWithString:@"http://webrain.it/rubyday2013/content.json"];
+            data = [NSData dataWithContentsOfURL:url];
+        }
+        
         NSError *error;
         NSDictionary *content = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
 
