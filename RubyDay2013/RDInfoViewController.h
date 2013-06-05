@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RDInfoViewController : UIViewController
+@interface RDInfoViewController : UITableViewController
 
 @end

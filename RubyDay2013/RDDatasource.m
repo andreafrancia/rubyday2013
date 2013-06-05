@@ -11,6 +11,7 @@
 @implementation RDDatasource {
     NSArray *tracks;
     NSArray *speakers;
+    NSArray *sponsorURLs;
 }
 
 static RDDatasource *dataSource = nil;
@@ -34,14 +35,15 @@ static RDDatasource *dataSource = nil;
 
     if (self)
     {
-        //NSURL *url = [NSURL URLWithString:@"http://webrain.it/rubyday2013/content.json"];
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"schedule" ofType:@"json"];
-        NSData* data = [NSData dataWithContentsOfFile:path];
+        NSURL *url = [NSURL URLWithString:@"http://webrain.it/rubyday2013/content.json"];
+//        NSString *path = [[NSBundle mainBundle] pathForResource:@"schedule" ofType:@"json"];
+        NSData* data = [NSData dataWithContentsOfURL:url];
         NSError *error;
         NSDictionary *content = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
 
         tracks = content[@"tracks"];
         speakers = content[@"speakers"];
+        sponsorURLs = content[@"sponsors"];
     }
 
     return self;
@@ -122,6 +124,16 @@ NSInteger sortSpeakers(id _speaker1, id _speaker2, void *context)
     }
 
     return @"Track #???";
+}
+
+- (NSArray *)sponsorURLs
+{
+    NSMutableArray *ary = [NSMutableArray arrayWithCapacity:sponsorURLs.count];
+
+    for (NSString *url in sponsorURLs)
+        [ary addObject:[NSURL URLWithString:url]];
+
+    return ary;
 }
 
 @end

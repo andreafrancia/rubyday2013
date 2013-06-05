@@ -19,6 +19,15 @@
 		CE417902175F74E8000CB68B /* RDTalkInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE417901175F74E7000CB68B /* RDTalkInfoCell.m */; };
 		CE417904175F74F6000CB68B /* RDTalkInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE417903175F74F6000CB68B /* RDTalkInfoCell.xib */; };
 		CE417906175F7C0D000CB68B /* rubylang@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE417905175F7C0D000CB68B /* rubylang@2x.png */; };
+		CE417908175F8006000CB68B /* RDInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE417907175F8005000CB68B /* RDInfoViewController.xib */; };
+		CE41790C175F851C000CB68B /* RDInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE41790B175F851B000CB68B /* RDInfoCell.xib */; };
+		CE41790F175F8533000CB68B /* RDInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41790E175F8532000CB68B /* RDInfoCell.m */; };
+		CE417913175F8596000CB68B /* webrain_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE417910175F8596000CB68B /* webrain_logo@2x.png */; };
+		CE417914175F8596000CB68B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE417911175F8596000CB68B /* logo.png */; };
+		CE417915175F8596000CB68B /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE417912175F8596000CB68B /* logo@2x.png */; };
+		CE417917175F859E000CB68B /* webrain_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE417916175F859E000CB68B /* webrain_logo.png */; };
+		CE417927175F95A0000CB68B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41791E175F8A02000CB68B /* Icon@2x.png */; };
+		CE417928175F95A2000CB68B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41791C175F89F5000CB68B /* Icon.png */; };
 		CE482E0A175A247F00ABC235 /* RDMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE482E09175A247F00ABC235 /* RDMainTabBarViewController.m */; };
 		CE65536B1759EDCF00F0EE63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE65536A1759EDCF00F0EE63 /* UIKit.framework */; };
 		CE65536D1759EDCF00F0EE63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE65536C1759EDCF00F0EE63 /* Foundation.framework */; };
@@ -84,6 +93,16 @@
 		CE417901175F74E7000CB68B /* RDTalkInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDTalkInfoCell.m; sourceTree = "<group>"; };
 		CE417903175F74F6000CB68B /* RDTalkInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDTalkInfoCell.xib; sourceTree = "<group>"; };
 		CE417905175F7C0D000CB68B /* rubylang@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rubylang@2x.png"; sourceTree = "<group>"; };
+		CE417907175F8005000CB68B /* RDInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDInfoViewController.xib; sourceTree = "<group>"; };
+		CE41790B175F851B000CB68B /* RDInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDInfoCell.xib; sourceTree = "<group>"; };
+		CE41790D175F8532000CB68B /* RDInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDInfoCell.h; sourceTree = "<group>"; };
+		CE41790E175F8532000CB68B /* RDInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDInfoCell.m; sourceTree = "<group>"; };
+		CE417910175F8596000CB68B /* webrain_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "webrain_logo@2x.png"; sourceTree = "<group>"; };
+		CE417911175F8596000CB68B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		CE417912175F8596000CB68B /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		CE417916175F859E000CB68B /* webrain_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = webrain_logo.png; sourceTree = "<group>"; };
+		CE41791C175F89F5000CB68B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		CE41791E175F8A02000CB68B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		CE482E08175A247F00ABC235 /* RDMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMainTabBarViewController.h; sourceTree = "<group>"; };
 		CE482E09175A247F00ABC235 /* RDMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMainTabBarViewController.m; sourceTree = "<group>"; };
 		CE6553671759EDCF00F0EE63 /* RubyDay2013.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubyDay2013.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +184,8 @@
 		CE65535E1759EDCF00F0EE63 = {
 			isa = PBXGroup;
 			children = (
+				CE41791E175F8A02000CB68B /* Icon@2x.png */,
+				CE41791C175F89F5000CB68B /* Icon.png */,
 				CE6553701759EDCF00F0EE63 /* RubyDay2013 */,
 				CE6553691759EDCF00F0EE63 /* Frameworks */,
 				CE6553681759EDCF00F0EE63 /* Products */,
@@ -208,6 +229,7 @@
 				CE9E3EF5175A272E003FE09C /* RDSpeakersViewController.m */,
 				CE9E3EF7175A273D003FE09C /* RDInfoViewController.h */,
 				CE9E3EF8175A273D003FE09C /* RDInfoViewController.m */,
+				CE417907175F8005000CB68B /* RDInfoViewController.xib */,
 				CE9E3EFC175A2D97003FE09C /* RDDatasource.h */,
 				CE9E3EFD175A2D97003FE09C /* RDDatasource.m */,
 				CE9E3EFF175A3C2E003FE09C /* RDTalkViewController.h */,
@@ -228,6 +250,9 @@
 				CE417900175F74E7000CB68B /* RDTalkInfoCell.h */,
 				CE417901175F74E7000CB68B /* RDTalkInfoCell.m */,
 				CE417903175F74F6000CB68B /* RDTalkInfoCell.xib */,
+				CE41790D175F8532000CB68B /* RDInfoCell.h */,
+				CE41790E175F8532000CB68B /* RDInfoCell.m */,
+				CE41790B175F851B000CB68B /* RDInfoCell.xib */,
 			);
 			path = RubyDay2013;
 			sourceTree = "<group>";
@@ -235,6 +260,10 @@
 		CE6553711759EDCF00F0EE63 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE417916175F859E000CB68B /* webrain_logo.png */,
+				CE417910175F8596000CB68B /* webrain_logo@2x.png */,
+				CE417911175F8596000CB68B /* logo.png */,
+				CE417912175F8596000CB68B /* logo@2x.png */,
 				CE4178F4175F3EE1000CB68B /* schedule.json */,
 				CE4178E9175E3AD3000CB68B /* rubylang.png */,
 				CE417905175F7C0D000CB68B /* rubylang@2x.png */,
@@ -371,6 +400,14 @@
 				CE4178FF175F6DA9000CB68B /* RDSpeakerHeaderCell.xib in Resources */,
 				CE417904175F74F6000CB68B /* RDTalkInfoCell.xib in Resources */,
 				CE417906175F7C0D000CB68B /* rubylang@2x.png in Resources */,
+				CE417908175F8006000CB68B /* RDInfoViewController.xib in Resources */,
+				CE41790C175F851C000CB68B /* RDInfoCell.xib in Resources */,
+				CE417913175F8596000CB68B /* webrain_logo@2x.png in Resources */,
+				CE417914175F8596000CB68B /* logo.png in Resources */,
+				CE417915175F8596000CB68B /* logo@2x.png in Resources */,
+				CE417917175F859E000CB68B /* webrain_logo.png in Resources */,
+				CE417927175F95A0000CB68B /* Icon@2x.png in Resources */,
+				CE417928175F95A2000CB68B /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +463,7 @@
 				CE4178E8175E3616000CB68B /* RDSpeakerCell.m in Sources */,
 				CE4178FD175F6D7C000CB68B /* RDSpeakerHeaderCell.m in Sources */,
 				CE417902175F74E8000CB68B /* RDTalkInfoCell.m in Sources */,
+				CE41790F175F8533000CB68B /* RDInfoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

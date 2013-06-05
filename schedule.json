@@ -1,4 +1,13 @@
 {
+  "sponsors": [
+    "http://rubyday.it/images/sponsors/mikamai.png",
+    "http://rubyday.it/images/sponsors/github.png",
+    "http://rubyday.it/images/sponsors/dnsimple.png",
+    "https://www.tddium.com/images/solano_logo.png",
+    "http://media.pragprog.com/images/cms/logos/Bookshelf_4in.png",
+    "http://unfusion.kunsan.ac.kr/word/pds-image/balsamiq-logo2.jpg",
+    "http://upload.wikimedia.org/wikipedia/it/a/a2/Logo_Universit%C3%A0_Milano-Bicocca.jpg",
+  ],
   "tracks": [
     {
       "name": "Track #1",
