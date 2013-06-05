@@ -92,4 +92,22 @@ NSInteger sortSpeakers(id _speaker1, id _speaker2, void *context)
     return [speakersStr substringToIndex:speakersStr.length - 3];
 }
 
+- (NSArray *)talksForTwitterHandle:(NSString *)twitterHandle
+{
+    NSMutableArray *talks = [NSMutableArray array];
+
+    for (NSDictionary *track in tracks)
+    {
+        for (NSDictionary *talk in track[@"schedule"])
+        {
+            if ([talk[@"speakers"] containsObject:twitterHandle])
+            {
+                [talks addObject:talk];
+            }
+        }
+    }
+
+    return talks;
+}
+
 @end

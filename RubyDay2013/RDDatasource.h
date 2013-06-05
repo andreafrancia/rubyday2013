@@ -16,5 +16,6 @@
 - (NSArray *)tracks;
 - (NSDictionary *)speakerWithTwitterHandle:(NSString *)twitterHandle;
 - (NSString *)speakersListFromHandles:(NSArray *)handles;
+- (NSArray *)talksForTwitterHandle:(NSString *)twitterHandle;
 
 @end

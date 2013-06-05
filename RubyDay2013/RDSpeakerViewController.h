@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RDSpeakerViewController : UIViewController
+@interface RDSpeakerViewController : UITableViewController
 
 -(id)initWithSpeakerDictionary:(NSDictionary *)speakerDictionary;
 

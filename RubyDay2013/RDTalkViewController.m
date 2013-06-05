@@ -46,7 +46,7 @@ static NSString *kAbstractCellIdentifier = @"AbstractCell";
 {
     [super viewDidLoad];
 
-    self.title = @"Talk details";
+    self.title = @"Talk";
 
     eurostile = [UIFont fontWithName:@"Eurostile" size:15.0];
     eurostileBold = [UIFont fontWithName:@"EurostileBold" size:15.0];
